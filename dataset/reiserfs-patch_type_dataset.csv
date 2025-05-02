@@ -1,0 +1,385 @@
+Version,Description,Component,Files_Modified,Lines_Added,Lines_Removed,Patch_Type
+2.6.1,[PATCH] Fix reiserfs handling of `silent' option.,super,1,32,27,Bug
+2.6.1,[PATCH] reiserfs commit_max_age mount option,"journal,super",4,32,7,Feature
+2.6.1,[PATCH] reiserfs_rename ctime update,dir,1,17,7,Bug
+2.6.2,[PATCH] reiserfs v3 should throttle writers,file,2,3,0,Reliability
+2.6.2,[PATCH] reiserfs: cleanup_bitmap_list() check for NULL argument.,journal,1,3,0,Bug
+2.6.3,[PATCH] gcc-3.5: reiserfs fixes,misc->compile,0,0,0,Maintenance
+2.6.3,[PATCH] try reiserfs before other filesystems,misc->code,0,0,0,Maintenance
+2.6.3,[PATCH] Suppress reiserfs page allocation wanring,misc->code,0,0,0,Maintenance
+2.6.5,[PATCH] reiserfs: fix null pointer deref,inode,1,1,1,Bug
+2.6.5,[PATCH] reiserfs: search_by_key fix,tree,1,10,6,Bug
+2.6.5,[PATCH] reiserfs: fix transaction sizes,"inode,tree",2,2,2,Performance
+2.6.5,[PATCH] reiserfs: atomicity fix,file,1,8,4,Bug
+2.6.5,[PATCH] resierfs: AIO support,misc->code,0,0,0,Maintenance
+2.6.5,[PATCH] reiserfs: use kernel min/max,misc->api,0,0,0,Maintenance
+2.6.6,[PATCH] reiserfs: support for nested transactions,jounral,4,86,9,Feature
+2.6.6,[PATCH] reiserfs: cleanups,misc->code,0,0,0,Maintenance
+2.6.6,[PATCH] reiserfs: logging rework,"tree,inode,journal,super",11,972,851,Performance
+2.6.6,[PATCH] reiserfs: data=ordered support,"file,inode,ioctl,journal,super",8,805,231,Feature
+2.6.6,[PATCH] reiserfs: locking fix,inode,1,4,1,Bug
+2.6.6,[PATCH] reiserfs: preallocation support,misc->code,0,0,0,Maintenance
+2.6.6,[PATCH] reiserfs: tail repacking fix,tree,1,3,2,Bug
+2.6.6,[PATCH] reiserfs: fix race with writepage,inode,1,37,42,Bug
+2.6.6,[PATCH] reiserfs: sparse file handling fix,misc->code,0,0,0,Maintenance
+2.6.6,[PATCH] reiserfs: laptop-mode support,"journal,super",2,5,3,Feature
+2.6.6,[PATCH] reiserfs: truncate leak fix,tree,1,1,3,Bug
+2.6.6,[PATCH] reiserfs: scheduling latency improvements,journal,1,4,12,Performance
+2.6.6,[PATCH] reiserfs: fix dirty-buffer warnings,journal,1,1,1,Bug
+2.6.6,[PATCH] reiserfs_kfree warning fix,misc->compile,0,0,0,Maintenance
+2.6.6,[PATCH] reiserfs writepage race with data=ordered,inode,1,1,1,Bug
+2.6.6,"[PATCH] Add ""commit=0"" to reiserfs","journal,super",3,13,6,Feature
+2.6.6,[PATCH] reiserfs: fsync() speedup,journal,1,17,7,Performance
+2.6.6,[PATCH] reiserfs: remove final sleep_on,misc->code,0,0,0,Maintenance
+2.6.6,[PATCH] Fix default value for commit interval for older reiserfs filesystems.,journal,1,10,8,Bug
+2.6.6,[PATCH] reiserfs use-after-free fix,journal,1,1,0,Bug
+2.6.6,[PATCH] lockfs: reiserfs fix,super,1,1,1,Bug
+2.6.6,[PATCH] reiserfs: ignore prepared and locked buffers,tree,1,2,1,Bug
+2.6.7,[PATCH] Reiserfs commit default fix,misc->code,0,0,0,Maintenance
+2.6.7,[PATCH] reiserfs: acl device node initialization,dir,1,1,1,Bug
+2.6.7,[PATCH] reiserfs: xattr support,"dir,file,inode,super,xattr",13,1735,53,Feature
+2.6.7,[PATCH] reiserfs: ACL support,"file,inode,dir,super,xattr",13,836,15,Feature
+2.6.7,[PATCH] reiserfs: support trusted xattrs,xattr,4,84,1,Feature
+2.6.7,[PATCH] reiserfs: selinux support,xattr,5,91,0,Feature
+2.6.7,[PATCH] reiserfs: xattr locking fixes,"inode,xattr",5,66,8,Bug
+2.6.7,[PATCH] reiserfs: quota support,"balloc,file,tree,inode,dir,super",10,364,121,Feature
+2.6.7,[PATCH] reiserfs: xattr permission fix,xattr,1,2,1,Bug
+2.6.7,[PATCH] reiserfs: add device info to diagnostic messages,"balloc,dir,tree,file,inode,journal,super,xattr",18,446,379,Reliability
+2.6.7,[PATCH] Fix reiserfs oom crash,journal,1,4,2,Bug
+2.6.7,[PATCH] Fix reiserfs inode size update race,file,1,12,4,Bug
+2.6.7,[PATCH] Fix for lockup in reiserfs acl/xattrs,xattr,1,6,4,Bug
+2.6.7,[PATCH] sparse: reiserfs annotation,"file,ioctl",2,6,6,Reliability
+2.6.8,[PATCH] reiserfs: block allocator optimizations,block,5,263,27,Feature
+2.6.8,"[PATCH] reiserfs: block allocator should not inherit ""packing locality 1""",balloc,1,6,1,Bug
+2.6.8,[PATCH] reiserfs: remove debugging warning from block allocator,misc->code,0,0,0,Maintenance
+2.6.8,[PATCH] reiserfs: btree readahead,tree,3,74,26,Performance
+2.6.8,[PATCH] reiserfs data logging support,"file,inode,journal,tree",7,129,60,Feature
+2.6.8,[PATCH] fix possible stack corruption during reiserfs_file_write,"bitmap,file",2,16,14,Bug
+2.6.8,[PATCH] reiserfs_setattr retval fix,inode,1,1,1,Bug
+2.6.8,[PATCH] sparse: NULL noise in fs/reiserfs,misc->code,0,0,0,Maintenance
+2.6.8,[PATCH] missing (void) in reiserfs on big-endian boxen,misc->code,0,0,0,Maintenance
+2.6.9,[PATCH] reiserfs v3 barrier support,"file,journal,super",5,113,15,Feature
+2.6.9,[PATCH] reiserfs: xattr/acl fixes,xattr,2,16,3,Bug
+2.6.9,[PATCH] Fix write() return values for reiserfs.,misc->code,0,0,0,Maintenance
+2.6.9,[PATCH] Fix for default ACL handling on ReiserFS,xattr,1,8,2,Bug
+2.6.9,[PATCH] fix for fsync ignoring writing errors,inode,1,3,2,Bug
+2.6.10,[PATCH] reiserfs: small filesystem fix,balloc,1,12,1,Bug
+2.6.10,[PATCH] ReiserFS: Cleanup internal use of bh macros,misc->api,0,0,0,Maintenance
+2.6.10,[PATCH] ReiserFS: Cleanup access of journal (cosmetic),misc->code,0,0,0,Maintenance
+2.6.10,[PATCH] ReiserFS: Add I/O error handling to journal operations,"file,inode,journal,dir,tree,super",14,884,277,Bug
+2.6.10,[PATCH] ReiserFS: Fix several missing reiserfs_write_unlock calls,dir,1,2,0,Bug
+2.6.10,[PATCH] reiserfs: rename struct key,misc->api,0,0,0,Maintenance
+2.6.10,[PATCH] reiserfs: support for REISERFS_UNSUPPORTED_OPT notation,super,2,9,2,Reliability
+2.6.10,"[PATCH] reiserfs: allow user_xattr and acl options to be ignored, with warning",misc->code,0,0,0,Maintenance
+2.6.10,[PATCH] m68k: Reiserfs: Add missing #include <linux/sched.h>,misc->code,0,0,0,Maintenance
+2.6.10,[PATCH] reiserfs bug fix: add missing pair of lock_kernel()/unlock_kernel(),inode,1,2,0,Bug
+2.6.11,[PATCH] Expose reiserfs_sync_fs(),misc->code,0,0,0,Maintenance
+2.6.11,[PATCH] Fix reiserfs quota debug messages,misc->compile,0,0,0,Maintenance
+2.6.11,[PATCH] Fix of quota deadlock on pagelock: reiserfs,"file,inode,dir,super",6,497,58,Bug
+2.6.11,[PATCH] reiserfs vs-8115 test adjustment,misc->code,0,0,0,Maintenance
+2.6.11,[PATCH] reiserfs: use proper 64-bit clean types,file,1,11,12,Bug
+2.6.11,[PATCH] Fix reiserfs quota SMP locks,super,1,17,0,Bug
+2.6.12,[PATCH] reiserfs: max_key fix,"super,tree",2,3,2,Bug
+2.6.12,[PATCH] reiserfs: use NULL instead of 0,misc->code,0,0,0,Maintenance
+2.6.12,[PATCH] reiserfs endianness: sanitize reiserfs_key union,misc->code,0,0,0,Maintenance
+2.6.12,[PATCH] reiserfs endianness: comp_short_keys() cleanup,misc->code,0,0,0,Maintenance
+2.6.12,[PATCH] reiserfs endianness: fix endianness bugs,journal,2,2,2,Bug
+2.6.12,[PATCH] reiserfs endianness: annotate little-endian objects,"tree,inode,file,dir",12,138,130,Reliability
+2.6.12,[PATCH] reiserfs endianness: clone struct reiserfs_key,misc->api,0,0,0,Maintenance
+2.6.12,[PATCH] reiserfs: journal_init fix,journal,1,5,7,Bug
+2.6.12,[PATCH] Fix rewriting on a full reiserfs filesystem,misc->code,0,0,0,Maintenance
+2.6.12,[PATCH] reiserfs: make resize option auto-get new device size,misc->code,0,0,0,Maintenance
+2.6.13,[PATCH] reiserfs+acl+quota deadlock fix,inode,1,1,1,Bug
+2.6.13,[PATCH] Fix error handling in reiserfs,dir,1,3,0,Bug
+2.6.13,[PATCH] reiserfs doesn't use mbcache,misc->code,1,0,1,Maintenance
+2.6.13,[PATCH] reiserfs: fix deadlock in inode creation failure path w/ default ACL,inode,1,11,1,Bug
+2.6.13,reiserfs: run scripts/Lindent on reiserfs code,misc->code,30,24429,22663,Maintenance
+2.6.13,[PATCH] reiserfs: fix up case where indent misreads the code,misc->code,1,1,1,Maintenance
+2.6.13,[PATCH] reiserfs: handle_attrs() fix,super,1,1,2,Bug
+2.6.13,[PATCH] reiserfs: enable attrs by default if saf,misc->code,1,2,0,Maintenance
+2.6.13,[PATCH] reiserfs: Check if attrs are enabled for attr ioctls,ioctl,1,6,0,Bug
+2.6.13,[PATCH] reiserfs: do not ignore i/io error on readpage,inode,1,12,3,Bug
+2.6.13,[PATCH] Make reiserfs BUG on too big transaction,journal,1,2,0,Bug
+2.6.13,[PATCH] quota: reiserfs: improve quota credit estimates,"file,inode,dir,super",6,58,34,Reliability
+2.6.13,[PATCH] reiserfs: add checking of journal_begin() return value,"inode,super",2,52,20,Bug
+2.6.14,[PATCH] reiserfs: use mark_inode_dirty instead of reiserfs_update_sd,"file,inode",2,13,14,Bug
+2.6.14,[PATCH] janitor: reiserfs: super.c - vfree() checking cleanups,misc->code,1,1,2,Maintenance
+2.6.14,[PATCH] Change ll_rw_block() calls in Reiser,journal,1,2,2,Bug
+2.6.15,[PATCH] reiserfs: close open transactions on error path,inode,1,18,8,Bug
+2.6.15,[PATCH] reiserfs: skip commit on io error,journal,1,14,4,Bug
+2.6.15,[PATCH] reiserfs: handle cnode allocation failure gracefully,journal,1,9,0,Reliability
+2.6.15,[PATCH] reiserfs: fix 32-bit overflow in map_block_for_writepage(),inode,1,1,1,Bug
+2.6.15,[PATCH] Fix return value in reiserfs allocator,file,1,2,2,Bug
+2.6.15,[PATCH] reiserfs: [kv]free() checking cleanup,misc->code,0,0,0,Maintenance
+2.6.15,[PATCH] gfp_t: reiserfs mapping_set_gfp_mask() use,misc->api,1,1,1,Maintenance
+2.6.16,[PATCH] reiserfs: fix unaligned bitmap usage,dir,2,5,5,Bug
+2.6.16,[PATCH] reiserfs: do not check if unsigned < 0,"file,inode,journal",3,10,15,Bug
+2.6.16,[PATCH] reiserfs: fix potential (unlikely) oops in reiserfs_get_acl,xattr,1,2,1,Bug
+2.6.16,[PATCH] reiserfs: disable automatic enabling of reiserfs inode attributes,super,1,0,2,Bug
+2.6.16,[PATCH] reiserfs_get_acl() build fix,misc->compile,1,5,1,Maintenance
+2.6.16,"[PATCH] someone broke reiserfs V3 mount options, this fixes it",super,1,1,1,Bug
+2.6.16,[PATCH] reiserfs: reiserfs: check for files > 2GB on 3.5.x disks,file,1,17,0,Reliability
+2.6.16,[PATCH] reiserfs: reiserfs fix journal accounting in journal_transaction_should_end,journal,1,3,0,Bug
+2.6.16,[PATCH] reiserfs: reiserfs write_ordered_buffers should not oops on dirty non-uptodate bh,journal,1,13,2,Bug
+2.6.16,[PATCH] reiserfs: reiserfs hang and performance fix for data=journal mode,"inode,journal",2,21,5,Bug
+2.6.16,[PATCH] resierfs: fix reiserfs_invalidatepage race against data=ordered,"inode,journal",2,16,1,Bug
+2.6.16,[PATCH] reiserfs: use generic_permission,misc->api,1,26,77,Maintenance
+2.6.16,[PATCH] reiserfs: remove reiserfs_permission_locked,misc->code,2,8,24,Maintenance
+2.6.16,[PATCH] reiserfs: missing kmalloc failure check,file,1,2,0,Bug
+2.6.16,[PATCH] reiserfs: use __GFP_NOFAIL instead of yield and retry loop for allocation,misc->api,1,2,6,Maintenance
+2.6.16,[PATCH] reiserfs: remove kmalloc wrapper,misc->api,9,49,154,Maintenance
+2.6.16,[PATCH] reiserfs: remove d_splice_alias NULL check from reiserfs_lookup,misc->code,1,1,5,Maintenance
+2.6.16,[PATCH] reiserfs: fix assertion failure in reiserfs+journaled quotas,journal,1,4,1,Bug
+2.6.16,[PATCH] remove reiserfs xattr permission checks,misc->code,2,0,51,Maintenance
+2.6.17,[PATCH] Fix reiserfs deadlock,xattr,1,3,2,Bug
+2.6.17,[PATCH] indirect_print_item() warning fix,misc->compile,1,1,1,Maintenance
+2.6.17,[PATCH] reiserfs/xattr_acl.c:reiserfs_get_acl(): make size an int,xattr,1,2,2,Bug
+2.6.17,[PATCH] reiserfs: use balance_dirty_pages_ratelimited_nr in reiserfs_file_write(),misc->api,1,1,1,Maintenance
+2.6.17,[PATCH] reiserfs: cleanups,misc->compile,3,8,10,Maintenance
+2.6.17,[PATCH] reiserfs: reiserfs_file_write() will lose error code when a 0-length write occurs w/ O_SYNC,file,1,4,4,Bug
+2.6.17,[PATCH] reiserfs: handle trans_id overflow,journal,1,18,3,Bug
+2.6.17,[PATCH] reiserfs: fix transaction overflowing,tree,2,77,138,Bug
+2.6.18,[PATCH] lockdep: annotate reiserfs,xattr,2,3,2,Reliability
+2.6.18,[PATCH] reiserfs_write_full_page() should not get_block past eof,inode,1,12,2,Bug
+2.6.18,[PATCH] fix reiserfs lock inversion of bkl vs inode semaphore,"file,ioctl",2,2,2,Bug
+2.6.18,[PATCH] i_mutex does not need to be locked in reiserfs_delete_inode(),inode,1,2,10,Performance
+2.6.18,[PATCH] reiserfs: fix handling of device names with /'s in them,misc->code,1,21,4,Maintenance
+2.6.18,[PATCH] reiserfs: fix journaling issue regarding fsync(),file,1,5,1,Bug
+2.6.18,[PATCH] lockdep: annotate the quota code,super,4,4,4,Reliability
+2.6.18,[PATCH] reiserfs: update ctime and mtime on expanding truncate,inode,1,5,0,Bug
+2.6.18,[PATCH] reiserfs: remove reiserfs_aio_write(),misc->api,1,1,7,Maintenance
+2.6.19,[PATCH] reiserfs: fmt bugfix,misc->code,1,2,1,Maintenance
+2.6.19,[PATCH] reiserfs: reset errval after initializing bitmap cache,super,1,1,0,Bug
+2.6.19,[PATCH] ReiserFS: Make sure all dentries refs are released before calling kill_block_super(),super,1,20,11,Reliability
+2.6.19,[PATCH] reiserfs: null pointer dereferencing in reiserfs_read_bitmap_block,balloc,1,2,2,Bug
+2.6.19,[PATCH] Remove unnecessary check in fs/reiserfs/inode.c,misc->code,1,1,1,Feature
+2.6.19,BUG_ON conversion for fs/reiserfs,misc->api,5,26,54,Maintenance
+2.6.19,[PATCH] reiserfs: eliminate minimum window size for bitmap searching,balloc,1,1,22,Performance
+2.6.19,[PATCH] reiserfs: use generic_file_open for open() checks,misc->api,1,1,0,Maintenance
+2.6.19,[PATCH] reiserfs: on-demand bitmap loading,"balloc,resize,super",4,70,91,Performance
+2.6.19,[PATCH] reiserfs: reorganize bitmap loading functions,misc->code,4,94,113,Maintenance
+2.6.19,[PATCH] reiserfs: clean up bitmap block buffer head references,misc->code,2,71,49,Maintenance
+2.6.19,[PATCH] reiserfs: fix is_reusable bitmap check to not traverse the bitmap info array,"balloc,super",3,28,15,Performance
+2.6.19,[PATCH] BLOCK: Move the ReiserFS device ioctl compat stuff to the ReiserFS driver [try #6],misc->code,0,0,0,Maintenance
+2.6.19,[PATCH] reiserfs: ifdef ACL stuff from inode,inode,4,31,5,Performance
+2.6.19,[PATCH] reiserfs: ifdef xattr_sem,inode,3,12,2,Performance
+2.6.19,[PATCH] Fix reiserfs latencies caused by data=ordered,journal,1,43,11,Performance
+2.6.19,[PATCH] reiserfs_fsync should only use barriers when they are enabled,file,1,1,1,Performance
+2.6.19,[PATCH] use gcc -O1 in fs/reiserfs only for ancient gcc versions,misc->compile,1,1,1,Maintenance
+2.6.19,[PATCH] reiserfs: warn about the useless nolargeio option,misc->code,1,2,19,Maintenance
+2.6.20,[PATCH] resierfs: avoid tail packing if an inode was ever mmapped,"inode,file",3,23,1,Bug
+2.6.20,"Fix reiserfs after ""test_clear_page_dirty()"" removal",misc->code,0,0,0,Maintenance
+2.6.20,[PATCH] struct path: convert reiserfs,misc->code,5,11,11,Maintenance
+2.6.20,[PATCH] struct path: rename Reiserfs's struct path,misc->api,7,58,58,Maintenance
+2.6.20,[PATCH] fs: reiserfs add missing brackets,misc->code,1,1,1,Maintenance
+2.6.20,[PATCH] reiserfs: do not add save links for O_DIRECT writes,file,1,4,50,Bug
+2.6.20,[PATCH] reiserfs: add missing D-cache flushing,misc->code,1,4,0,Maintenance
+2.6.20,[PATCH] fix reiserfs bad path release panic,inode,1,2,1,Bug
+2.6.21,reiserfs: fix xattr root locking/refcount bug,xattr,1,24,68,Bug
+2.6.21,[PATCH] reiserfs: fix key decrementing,tree,1,1,1,Bug
+2.6.21,[PATCH] reiserfs: Use ARRAY_SIZE macro when appropriate,misc->api,1,3,2,Maintenance
+2.6.21,[PATCH] cleanup include/linux/reiserfs_xattr.h,misc->code,1,19,5,Maintenance
+2.6.22,reiserfs: mailing list has moved,misc->doc,1,1,1,Maintenance
+2.6.22,Missing 'const' from reiserfs MIN_KEY declaration.,misc->code,1,1,1,Maintenance
+2.6.22,reiserfs: use zero_user_page,misc->api,2,13,39,Maintenance
+2.6.22,reiserfs: use __set_current_state(),misc->api,1,1,1,Maintenance
+2.6.22,reiserfs: proc support requires PROC_FS,misc->compile,1,1,1,Maintenance
+2.6.22,"reiserfs: correct misspelled ""REISERFS_PROC_INFO"" to ""CONFIG_REISERFS_PROC_INFO""",misc->code,0,0,0,Maintenance
+2.6.22,reiserfs: shrink superblock if no xattrs,super,2,6,3,Performance
+2.6.22,reiserfs: possible null pointer dereference during resize,resize,1,4,0,Bug
+2.6.22,reiserfs: suppress lockdep warning,xattr,1,1,1,Reliability
+2.6.23,fix preprocessor idiocy in reiserfs,misc->code,1,5,3,Maintenance
+2.6.23,quota: fix infinite loop,super,3,31,4,Bug
+2.6.23,more reiserfs endianness annotations,tree,1,3,2,Reliability
+2.6.24,reiserfs: don't drop PG_dirty when releasing sub-page-sized dirty file,tree,1,0,3,Bug
+2.6.24,reiserfs: new export ops,misc->api,3,35,43,Maintenance
+2.6.24,reiserfs: ignore on disk s_bmap_nr value,"balloc,journal,resize,super",5,56,23,Feature
+2.6.24,reiserfs: remove first_zero_hint,misc->code,3,13,26,Maintenance
+2.6.24,reiserfs: fix usage of signed ints for block numbers,"balloc,inode,journal,tree",5,38,32,Bug
+2.6.24,reiserfs: fix memset byte count during resize,resize,1,1,1,Bug
+2.6.24,reiserfs: use is_reusable to catch corruption,balloc,1,13,8,Reliability
+2.6.24,reiserfs: dont use BUG when panicking,other,1,4,6,Bug
+2.6.24,reiserfs: fix up lockdep warnings,xattr,1,3,2,Reliability
+2.6.24,reiserfs: turn of ATTR_KILL_S*ID at beginning of reiserfs_setattr,inode,1,5,1,Bug
+2.6.24,reiserfs: do not repair wrong journal params,journal,1,57,43,Reliability
+2.6.24,reiserfs: workaround for dead loop in finish_unfinished,super,1,15,3,Bug
+2.6.24,reiserfs: fix kernel panic on corrupted directory,dir,1,10,0,Reliability
+2.6.24,try to reap reiserfs pages left around by invalidatepage,journal,1,32,10,Performance
+2.6.24,fs/reiserfs/: cleanups,misc->code,4,4,67,Maintenance
+2.6.24,reiserfs: use generic_cont_expand_simple,misc->api,1,11,2,Maintenance
+2.6.24,reiserfs: convert to new aops,misc->api,3,183,19,Maintenance
+2.6.24,reiserfs: use generic write,misc->api,1,1,1239,Maintenance
+2.6.25,[PATCH] reiserfs: eliminate private use of struct file in xattr,misc->code,1,30,80,Maintenance
+2.6.25,fs/reiserfs/super.c: correct use of ! and &,super,1,1,1,Bug
+2.6.25,use __u32 in linux/reiserfs_fs.h,misc->api,1,1,1,Maintenance
+2.6.25,mount options: fix reiserfs,misc->code,1,26,12,Maintenance
+2.6.25,reiserfs: constify function pointer tables,misc->api,1,1,1,Maintenance
+2.6.25,fs/reiserfs/xattr.c: use LIST_HEAD instead of LIST_HEAD_INIT,misc->api,1,1,1,Maintenance
+2.6.25,reiserfs: complement va_start() with va_end().,misc->code,1,2,0,Maintenance
+2.6.26,reiserfs: discard prealloc in reiserfs_delete_inode,inode,1,2,0,Bug
+2.6.26,reiserfs: add missing unlock to an error path in reiserfs_quota_write(),super,1,3,1,Bug
+2.6.26,MAINTAINERS: reiserfs entry is out of date,misc->doc,1,0,3,Maintenance
+2.6.26,reiserfs: use open_bdev_excl,misc->api,2,23,28,Maintenance
+2.6.26,reiserfs: use non-racy method for proc entries creation,other,1,3,6,Bug
+2.6.26,reiserfs: unpack tails on quota files,super,3,14,8,Bug
+2.6.26,reiserfs: fix hang on umount with quotas when journal is aborted,super,1,7,1,Bug
+2.6.26,reiserfs: replace remaining __FUNCTION__ occurrences,misc->api,4,13,13,Maintenance
+2.6.26,reiserfs: fix more sparse warnings in do_balan.c,misc->code,1,7,7,Maintenance
+2.6.26,reiserfs: fix sparse warning in journal.c,misc->code,1,1,1,Maintenance
+2.6.26,reiserfs: le*_add_cpu conversion,misc->api,0,0,0,Maintenance
+2.6.26,quota: reiserfs: make reiserfs handle quotaon on remount,misc->code,1,8,5,Maintenance
+2.6.27,reiserfs: removed duplicated #include,misc->code,1,0,1,Maintenance
+2.6.27,reiserfs: remove double definitions of xattr macros,misc->code,3,0,6,Maintenance
+2.6.27,reiserfs: convert j_commit_lock to mutex,misc->api,2,11,13,Maintenance
+2.6.27,reiserfs: convert j_flush_sem to mutex,misc->api,2,8,8,Maintenance
+2.6.27,reiserfs: convert j_lock to mutex,misc->api,2,4,4,Maintenance
+2.6.27,reiserfs: correct mount option parsing to detect when quota options can be changed,super,1,60,23,Bug
+2.6.27,reiserfs: fix typos in messages and comments (journalled -> journaled),misc->code,1,5,5,Maintenance
+2.6.27,reiserfs: fix synchronization of quota files in journal=data mode,super,1,21,9,Bug
+2.6.28,[PATCH] reiserfs: add missing llseek method,misc->api,1,1,0,Maintenance
+2.6.28,[PATCH] remember mode of reiserfs journal,misc->code,2,5,2,Maintenance
+2.6.28,fs/reiserfs: use an IS_ERR test rather than a NULL test,misc->code,1,1,1,Feature
+2.6.28,reiserfs/procfs.c: remove CVS keywords,misc->code,1,0,3,Maintenance
+2.6.29,fs/Kconfig: move reiserfs out,misc->code,2,86,85,Maintenance
+2.6.29,fix breakage in reiserfs_new_inode(),inode,1,6,7,Bug
+2.6.29,reiserfs: Add default allocation routines for quota structures,misc->api,1,2,0,Maintenance
+2.6.29,reiserfs: Use sb_any_quota_loaded() instead of sb_any_quota_enabled().,misc->api,1,3,5,Maintenance
+2.6.29,nfsd race fixes: reiserfs,"inode,dir",2,18,5,Bug
+2.6.29,CRED: Wrap task credential accesses in the ReiserFS filesystem,misc->api,1,2,2,Maintenance
+2.6.30,reiserfs: fixup perms when xattrs are disabled,xattr,2,20,20,Bug
+2.6.30,reiserfs: deal with NULL xattr root w/ xattrs disabled,xattr,2,3,3,Bug
+2.6.30,reiserfs: clean up ifdefs,misc->code,1,22,23,Maintenance
+2.6.30,reiserfs: remove privroot hiding in lookup,misc->code,4,16,28,Maintenance
+2.6.30,reiserfs: dont associate security.* with xattr files,misc->code,1,10,2,Maintenance
+2.6.30,reiserfs: fixup xattr_root caching,xattr,3,48,29,Performance
+2.6.30,Always lookup priv_root on reiserfs mount and keep it,"super,xattr",3,41,52,Bug
+2.6.30,reiserfs: Expand i_mutex to enclose lookup_one_len,xattr,1,14,18,Reliability
+2.6.30,reiserfs: fix j_last_flush_trans_id type,misc->code,1,1,1,Maintenance
+2.6.30,fs/reiserfs: return f_fsid for statfs(2),misc->compile,2,6,0,Maintenance
+2.6.30,reiserfs: xattr_create is unused with xattrs disabled,misc->code,1,2,0,Maintenance
+2.6.30,reiserfs: fix build breakage,misc->compile,1,2,1,Maintenance
+2.6.30,reiserfs: rename [cn]_* variables,misc->code,0,0,0,Maintenance
+2.6.30,reiserfs: rename p_._ variables,misc->code,5,365,356,Maintenance
+2.6.30,reiserfs: rename p_s_tb to tb,misc->code,3,254,251,Maintenance
+2.6.30,reiserfs: rename p_s_inode to inode,misc->code,5,95,89,Maintenance
+2.6.30,reiserfs: rename p_s_bh to bh,misc->code,3,93,99,Maintenance
+2.6.30,reiserfs: rename p_s_sb to sb,misc->code,5,468,469,Maintenance
+2.6.30,reiserfs: strip trailing whitespace,misc->code,19,184,184,Maintenance
+2.6.30,reiserfs: cleanup path functions,misc->code,2,43,74,Maintenance
+2.6.30,reiserfs: factor out buffer_info initialization,misc->api,1,60,115,Maintenance
+2.6.30,reiserfs: add atomic addition of selinux attributes during inode creation,"inode,dir,xattr",5,137,6,Feature
+2.6.30,reiserfs: use generic readdir for operations across all xattrs,"dir,xattr",3,131,300,Performance
+2.6.30,reiserfs: journaled xattrs,"inode,dir,xattr",7,159,49,Feature
+2.6.30,reiserfs: use generic xattr handlers,misc->api,9,258,441,Maintenance
+2.6.30,reiserfs: remove i_has_xattr_dir,misc->code,1,1,8,Maintenance
+2.6.30,reiserfs: make per-inode xattr locking more fine grained,xattr,4,55,90,Performance
+2.6.30,reiserfs: eliminate per-super xattr lock,misc->code,8,74,151,Maintenance
+2.6.30,reiserfs: simplify xattr internal file lookups/opens,misc->code,1,135,127,Maintenance
+2.6.30,reiserfs: Clean up xattrs when REISERFS_FS_XATTR is unset,xattr,4,367,357,Bug
+2.6.30,reiserfs: remove IS_PRIVATE helpers,misc->api,7,23,33,Maintenance
+2.6.30,reiserfs: remove link detection code,misc->code,1,0,13,Maintenance
+2.6.30,reiserfs: xattr reiserfs_get_page takes offset instead of index,misc->api,1,4,6,Maintenance
+2.6.30,reiserfs: small variable cleanup,misc->code,1,8,12,Maintenance
+2.6.30,reiserfs: use reiserfs_error(),"balloc,inode,tree,dir,super,xattr",9,107,110,Reliability
+2.6.30,reiserfs: introduce reiserfs_error(),misc->api,2,29,0,Maintenance
+2.6.30,reiserfs: rearrange journal abort,misc->code,3,6,21,Maintenance
+2.6.30,reiserfs: rework reiserfs_panic,misc->code,13,200,183,Maintenance
+2.6.30,reiserfs: add locking around error buffer,other,1,4,1,Bug
+2.6.30,reiserfs: eliminate reiserfs_warning from uniqueness functions,other,1,2,5,Bug
+2.6.30,reiserfs: prepare_error_buf wrongly consumes va_arg,other,1,3,9,Bug
+2.6.30,reiserfs: rework reiserfs_warning,misc->code,17,454,426,Maintenance
+2.6.30,reiserfs: make some warnings informational,misc->code,3,13,17,Maintenance
+2.6.30,reiserfs: use more consistent printk formatting,misc->code,1,14,14,Maintenance
+2.6.30,reiserfs: use buffer_info for leaf_paste_entries,misc->api,3,11,13,Maintenance
+2.6.30,reiserfs: audit transaction ids to always be unsigned ints,misc->code,5,31,31,Maintenance
+2.6.30,reiserfs: add support for mount count incrementing,misc->code,3,13,2,Maintenance
+2.6.30,reiserfs: Use lowercase names of quota functions,misc->api,5,24,22,Maintenance
+2.6.30,reiserfs: Remove unnecessary quota functions,misc->code,1,2,56,Maintenance
+2.6.31,switch reiserfs to inode->i_acl,misc->api,5,4,55,Maintenance
+2.6.31,switch reiserfs to usual conventions for caching ACLs,misc->api,3,16,21,Maintenance
+2.6.31,reiserfs: minimal fix for ACL caching,misc->code,1,1,1,Maintenance
+2.6.31,reiserfs: remove stray unlock_super in reiserfs_resize,misc->code,1,0,1,Maintenance
+2.6.31,reiserfs: fix warnings with gcc 4.4,misc->compile,3,47,15,Maintenance
+2.6.31,reiserfs: allow exposing privroot w/ xattrs enabled,misc->code,4,9,7,Maintenance
+2.6.32,const: make struct super_block::s_qcop const,misc->api,10,11,11,Maintenance
+2.6.32,const: make struct super_block::dq_op const,misc->api,8,8,8,Maintenance
+2.6.33,reiserfs: Fix softlockup while waiting on an inode,inode,1,2,0,Bug
+2.6.33,reiserfs: Fix vmalloc call under reiserfs lock,journal,1,2,0,Bug
+2.6.33,reiserfs: Relax reiserfs_xattr_set_handle() while acquiring xattr locks,xattr,1,4,0,Bug
+2.6.33,reiserfs: Fix unreachable statement,ioctl,1,2,1,Bug
+2.6.33,reiserfs: Don't call reiserfs_get_acl() with the reiserfs lock,xattr,1,2,0,Bug
+2.6.33,reiserfs: Relax lock on xattr removing,xattr,1,9,3,Bug
+2.6.33,reiserfs: Relax the lock before truncating pages,inode,1,10,1,Bug
+2.6.33,reiserfs: Fix recursive lock on lchown,inode,1,5,3,Bug
+2.6.33,reiserfs: Fix mistake in down_write() conversion,xattr,1,1,1,Bug
+2.6.33,reiserfs: Safely acquire i_mutex from xattr_rmdir,xattr,1,2,1,Bug
+2.6.33,reiserfs: Safely acquire i_mutex from reiserfs_for_each_xattr,xattr,1,3,2,Bug
+2.6.33,reiserfs: Fix journal mutex <-> inode mutex lock inversion,xattr,1,2,1,Bug
+2.6.33,reiserfs: Fix unwanted recursive reiserfs lock in reiserfs_unlink(),dir,1,4,3,Bug
+2.6.33,reiserfs: Relax lock before open xattr dir in reiserfs_xattr_set_handle(),xattr,1,7,2,Bug
+2.6.33,reiserfs: Relax reiserfs lock while freeing the journal,journal,1,2,1,Bug
+2.6.33,reiserfs: Fix reiserfs lock <-> i_mutex dependency inversion on xattr,xattr,1,7,2,Bug
+2.6.33,reiserfs: Warn on lock relax if taken recursively,other,2,18,0,Reliability
+2.6.33,reiserfs: Fix reiserfs lock <-> i_xattr_sem dependency inversion,xattr,2,9,1,Bug
+2.6.33,reiserfs: Fix remaining in-reclaim-fs <-> reclaim-fs-on locking inversion,journal,1,12,3,Bug
+2.6.33,reiserfs: truncate blocks not used by a write,inode,1,14,4,Bug
+2.6.33,reiserfs: Fix reiserfs lock <-> inode mutex dependency inversion,xattr,2,11,1,Bug
+2.6.33,reiserfs: don't compile procfs.o at all if no support,misc->code,3,26,36,Maintenance
+2.6.33,reiserfs: remove /proc/fs/reiserfs/version,misc->code,3,0,48,Maintenance
+2.6.33,reiserfs: Fix reiserfs lock and journal lock inversion dependency,inode,1,3,2,Bug
+2.6.33,reiserfs: Fix possible recursive lock,misc->code,1,12,3,Maintenance
+2.6.33,"reiserfs: fix misspelling of ""journaled""",misc->code,0,0,0,Maintenance
+2.6.33,kill-the-bkl/reiserfs: turn GFP_ATOMIC flag to GFP_NOFS in reiserfs_get_block(),misc->code,1,1,1,Maintenance
+2.6.33,kill-the-bkl/reiserfs: drop the fs race watchdog from _get_block_create_0(),misc->code,1,2,9,Maintenance
+2.6.33,kill-the-bkl/reiserfs: definitely drop the bkl from reiserfs_ioctl(),misc->code,4,6,12,Maintenance
+2.6.33,kill-the-bkl/reiserfs: always lock the ioctl path,ioctl,1,39,27,Bug
+2.6.33,kill-the-bkl/reiserfs: fix reiserfs lock to cpu_add_remove_lock dependency,journal,1,4,1,Bug
+2.6.33,kill-the-bkl/reiserfs: Fix induced mm->mmap_sem to sysfs_mutex dependency,journal,1,16,0,Bug
+2.6.33,kill-the-bkl/reiserfs: panic in case of lock imbalance,other,1,3,4,Reliability
+2.6.33,kill-the-bkl/reiserfs: fix recursive reiserfs write lock in reiserfs_commit_write(),inode,1,2,9,Performance
+2.6.33,kill-the-bkl/reiserfs: fix recursive reiserfs lock in reiserfs_mkdir(),dir,1,4,3,Bug
+2.6.33,"kill-the-bkl/reiserfs: fix ""reiserfs lock"" / ""inode mutex"" lock inversion dependency",xattr,1,1,1,Bug
+2.6.33,kill-the-bkl/reiserfs: move the concurrent tree accesses checks per superblock,"tree,other",5,18,24,Bug
+2.6.33,kill-the-bkl/reiserfs: acquire the inode mutex safely,"journal,xattr",3,37,36,Bug
+2.6.33,kill-the-bkl/reiserfs: unlock only when needed in search_by_key,tree,1,34,8,Performance
+2.6.33,kill-the-bkl/reiserfs: use mutex_lock in reiserfs_mutex_lock_safe,misc->code,1,3,5,Maintenance
+2.6.33,kill-the-bkl/reiserfs: factorize the locking in reiserfs_write_end(),inode,1,15,10,Performance
+2.6.33,kill-the-bkl/reiserfs: reduce number of contentions in search_by_key(),tree,1,11,1,Performance
+2.6.33,kill-the-bkl/reiserfs: don't hold the write recursively in reiserfs_lookup(),dir,1,10,3,Bug
+2.6.33,kill-the-bkl/reiserfs: conditionaly release the write lock on fs_changed(),other,1,1,3,Performance
+2.6.33,kill-the-BKL/reiserfs: add reiserfs_cond_resched(),misc->api,1,13,0,Maintenance
+2.6.33,kill-the-bkl/reiserfs: lock only once on reiserfs_get_block(),inode,1,11,8,Bug
+2.6.33,kill-the-BKL/reiserfs: release the write lock on flush_commit_list(),journal,1,5,2,Bug
+2.6.33,kill-the-BKL/reiserfs: release the write lock inside reiserfs_read_bitmap_block(),balloc,1,2,0,Bug
+2.6.33,kill-the-BKL/reiserfs: release the write lock inside get_neighbors(),tree,1,4,0,Bug
+2.6.33,kill-the-BKL/reiserfs: release write lock while rescheduling on prepare_for_delete_or_cut(),tree,1,2,0,Bug
+2.6.33,kill-the-BKL/reiserfs: release the write lock before rescheduling on do_journal_end(),journal,1,2,0,Bug
+2.6.33,kill-the-BKL/reiserfs: release write lock on fs_changed(),other,1,7,1,Bug
+2.6.33,kill-the-BKL/reiserfs: only acquire the write lock once in reiserfs_dirty_inode,super,1,9,6,Bug
+2.6.33,kill-the-BKL/reiserfs: lock only once in reiserfs_truncate_file,inode,1,7,3,Bug
+2.6.33,kill-the-BKL/reiserfs: provide a tool to lock only once the write lock,other,2,28,0,Reliability
+2.6.33,"reiserfs, kill-the-BKL: fix unsafe j_flush_mutex lock",journal,1,1,1,Bug
+2.6.33,reiserfs: kill-the-BKL,misc->code,1,4,6,Maintenance
+2.6.34,reiserfs: fix corruption during shrinking of xattrs,xattr,1,1,1,Bug
+2.6.34,reiserfs: fix permissions on .reiserfs_priv,"dir,xattr",2,4,15,Bug
+2.6.34,reiserfs: Fix locking BUG during mount failure,super,1,4,6,Bug
+2.6.34,reiserfs: properly honor read-only devices,journal,1,9,6,Bug
+2.6.34,reiserfs: fix oops while creating privroot with selinux enabled,xattr,2,6,1,Bug
+2.6.35,reiserfs: Fix resuming of quotas on remount read-write,super,1,10,2,Bug
+2.6.35,"reiserfs: replace inode uid,gid,mode initialization with helper function",misc->api,1,4,14,Maintenance
+2.6.35,reiserfs: constify xattr_handler,misc->api,7,18,18,Maintenance
+2.6.36,reiserfs: fix unwanted reiserfs lock recursion,ioctl,1,3,2,Bug
+2.6.36,reiserfs: fix dependency inversion between inode and reiserfs mutexes,ioctl,1,1,1,Bug
+2.6.36,fix reiserfs_evict_inode end_writeback second call,inode,1,1,0,Bug
+2.6.36,reiserfs: remove unused local `wait',misc->code,0,0,0,Maintenance
+2.6.36,reiserfs: typo comment fix,misc->code,1,1,1,Maintenance
+2.6.36,convert reiserfs to ->evict_inode(),misc->api,3,12,11,Maintenance
+2.6.36,Fix reiserfs_file_release(),"file,inode,super",4,32,26,Bug
+2.6.37,reiserfs: don't acquire lock recursively in reiserfs_acl_chmod,xattr,1,4,2,Bug
+2.6.37,reiserfs: fix inode mutex - reiserfs lock misordering,ioctl,1,3,4,Bug
+2.6.37,reiserfs: replace barriers with explicit flush / FUA usage,misc->api,1,20,86,Maintenance
+2.6.38,reiserfs xattr ->d_revalidate() shouldn't care about RCU,xattr,1,0,2,Bug
+2.6.38,fix reiserfs mkdir() breakage,dir,1,1,1,Bug
+2.6.38,reiserfs: make sure va_end() is always called after va_start().,other,1,2,2,Bug
+2.6.39,reiserfs: use little-endian bitops,misc->api,1,13,14,Maintenance
+2.6.39,reiserfs: make commit_wq use the default concurrency level,journal,1,1,1,Performance

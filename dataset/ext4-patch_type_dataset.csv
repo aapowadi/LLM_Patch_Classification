@@ -1,0 +1,1155 @@
+Version,Description,Component,Files_Modified,Lines_Added,Lines_Removed,Patch_Type
+2.6.19,[PATCH] ext4: fix printk format warnings,misc->compile,0,0,0,Maintenance
+2.6.19,[PATCH] Documentation/filesystems/ext4.txt,misc->doc,0,0,0,Maintenance
+2.6.19,[PATCH] ext4 whitespace cleanups,misc->code,0,0,0,Maintenance
+2.6.19,[PATCH] ext4: errors behaviour fix,super,1,2,0,Bug
+2.6.19,[PATCH] ext4: rename logic_sb_block,misc->code,0,0,0,Maintenance
+2.6.19,[PATCH] ext4 64 bit divide fix,misc->compile,0,0,0,Maintenance
+2.6.19,[PATCH] ext4 uninline ext4_get_group_no_and_offset(),misc->api,0,0,0,Maintenance
+2.6.19,[PATCH] ext4: move block number hi bits,misc->code,0,0,0,Maintenance
+2.6.19,[PATCH] ext4: allow larger descriptor size,"balloc,inode,super",5,31,11,Feature
+2.6.19,[PATCH] ext4: removesector_t bits check,misc->code,0,0,0,Maintenance
+2.6.19,[PATCH] ext4: blk_type from sector_t to unsigned long long,misc->api,0,0,0,Maintenance
+2.6.19,[PATCH] ext4: 64bit metadata,"balloc,inode,resize,super",6,201,97,Feature
+2.6.19,[PATCH] ext4: 48bit i_file_acl,xattr,2,14,2,Feature
+2.6.19,[PATCH] ext4: clean up comments in ext4-extents patch,misc->code,0,0,0,Maintenance
+2.6.19,[PATCH] ext4: uninitialised extent handling,extent,2,18,0,Feature
+2.6.19,[PATCH] ext4: 48bit physical block number support in extents,extent,3,116,81,Feature
+2.6.19,[PATCH] ext3: add extent map support,extent,12,2368,18,Feature
+2.6.19,[PATCH] ext4: switch fsblk to sector_t,misc->code,0,0,0,Maintenance
+2.6.19,[PATCH] ext4: enable building of ext4,misc->compile,0,0,0,Maintenance
+2.6.19,[PATCH] ext4: rename ext4 symbols to avoid duplication of ext3 symbols,misc->code,0,0,0,Maintenance
+2.6.19,[PATCH] ext4: initial copy of files from ext3,misc->code,0,0,0,Maintenance
+2.6.20,"[PATCH] ext4: change uses of f_{dentry, vfsmnt} to use f_path",misc->api,0,0,0,Maintenance
+2.6.20,[PATCH] ext4 calls journal_stop,misc->api,0,0,0,Maintenance
+2.6.20,[PATCH] ext4: Eliminate inline functions,misc->api,0,0,0,Maintenance
+2.6.20,[PATCH] ext4: kmalloc to kzalloc,misc->api,0,0,0,Maintenance
+2.6.20,[PATCH] ext4: if expression format,misc->code,0,0,0,Maintenance
+2.6.20,[PATCH] ext4: fix credit calculation in ext4_ext_calc_credits_for_insert,extent,1,4,3,Bug
+2.6.20,[PATCH] ext3/4: don't do orphan processing on readonly devices,super,1,6,0,Bug
+2.6.20,[PATCH] ext4 balloc: fix _with_rsv freeze,balloc,1,1,1,Bug
+2.6.20,[PATCH] ext4 balloc: use io_error label,misc->code,0,0,0,Maintenance
+2.6.20,[PATCH] ext4 balloc: say rb_entry not list_entry,misc->api,0,0,0,Maintenance
+2.6.20,[PATCH] ext4 balloc: fix off-by-one against rsv_end,balloc,1,1,1,Bug
+2.6.20,[PATCH] ext4 balloc: fix off-by-one against grp_goal,balloc,1,2,2,Bug
+2.6.20,[PATCH] ext4 balloc: reset windowsz when full,balloc,1,1,0,Bug
+2.6.20,[PATCH] ext4: fix reservation extension,balloc,1,8,4,Bug
+2.6.20,[PATCH] retries in ext4_prepare_write() violate ordering requirements,inode,1,75,10,Bug
+2.6.20,[PATCH] ext4_ext_split(): remove dead code,misc->code,0,0,0,Maintenance
+2.6.20,[PATCH] ext4: uninline large functions,misc->api,0,0,0,Maintenance
+2.6.20,[PATCH] handle ext4 directory corruption better,dir,2,12,0,Reliability
+2.6.20,[PATCH] Remove superfluous lock_super() in extN xattr code,xattr,3,3,12,Performance
+2.6.20,[PATCH] ext4: fsid for statvfs,super,1,5,0,Bug
+2.6.21,"[PATCH] revert ""retries in ext4_prepare_write() violate ordering requirements""",inode,1,10,75,Bug
+2.6.21,[PATCH] ext[34]: EA block reference count racing fix,xattr,1,25,16,Bug
+2.6.21,[PATCH] ext[234]: update documentation,misc->doc,0,0,0,Maintenance
+2.6.21,[PATCH] Mark struct super_operations const,misc->api,0,0,0,Maintenance
+2.6.21,[PATCH] mark struct inode_operations const 1,misc->api,0,0,0,Maintenance
+2.6.21,[PATCH] jbd layer function called instead of fs specific one,misc->api,0,0,0,Maintenance
+2.6.21,[PATCH] remove ext[34]_inc_count and _dec_count,misc->api,0,0,0,Maintenance
+2.6.21,[PATCH] return ENOENT from ext3_link when racing with unlink,dir,1,6,0,Reliability
+2.6.21,[PATCH] fix umask when noACL kernel meets extN tuned for ACLs,super,3,12,0,Bug
+2.6.21,[PATCH] ext4: refuse ro to rw remount of fs with orphan inodes,super,1,16,0,Bug
+2.6.22,ext4: lost brelse in ext4_read_inode(),inode,1,3,1,Bug
+2.6.22,When ext4_ext_insert_extent() fails to insert new blocks,extent,1,5,1,Bug
+2.6.22,ext4: Extent overlap bugfix,extent,2,59,2,Bug
+2.6.22,Remove unnecessary exported symbols.,misc->code,0,0,0,Maintenance
+2.6.22,EXT4: Fix whitespace,misc->code,0,0,0,Maintenance
+2.6.22,ext3: dirindex error pointer issues,dir,1,15,11,Bug
+2.6.22,ext2/3/4: fix file date underflow on ext2 3 filesystems on 64 bit systems,inode,1,3,3,Bug
+2.6.23,ext34: ensure do_split leaves enough free space in both blocks,dir,1,35,4,Bug
+2.6.23,dir_index: error out instead of BUG on corrupt dx dirs,dir,2,60,8,Reliability
+2.6.23,quota: fix infinite loop,super,3,31,4,Bug
+2.6.23,"""ext4_ext_put_in_cache"" uses __u32 to receive physical block number",extent,1,1,1,Bug
+2.6.23,fix inode_table test in ext234_check_descriptors,super,1,1,1,Bug
+2.6.23,fix ext4/JBD2 build warnings,misc->compile,2,4,4,Maintenance
+2.6.23,readahead: convert ext3/ext4 invocations,dir,1,8,6,Performance
+2.6.23,ext4: extent macros cleanup,misc->code,1,9,4,Maintenance
+2.6.23,"Fix compilation with EXT_DEBUG, also fix leXX_to_cpu conversions.",misc->compile,1,10,8,Maintenance
+2.6.23,ext4: remove extra IS_RDONLY() check b,misc->code,0,0,0,Maintenance
+2.6.23,ext4: Use is_power_of_2(),misc->api,1,2,3,Maintenance
+2.6.23,Use zero_user_page() in ext4 where possible,misc->api,1,2,9,Maintenance
+2.6.23,ext4: Remove 65000 subdirectory limit,dir,2,49,15,Feature
+2.6.23,"ext4: Expand extra_inodes space per the s_{want,min}_extra_isize fields","inode,xattr",4,347,8,Feature
+2.6.23,ext4: Add nanosecond timestamps,"inode,ioctl,dir,super,xattr",9,147,25,Feature
+2.6.23,ext4: Set the journal JBD2_FEATURE_INCOMPAT_64BIT on large devices,super,1,7,0,Bug
+2.6.23,ext4: Make extents code sanely handle on-disk corruption,extent,1,86,58,Reliability
+2.6.23,ext4: copy i_flags to inode flags on write,"inode,ioctl",3,22,0,Bug
+2.6.23,ext4: Enable extents by default,misc->code,1,11,1,Maintenance
+2.6.23,Change on-disk format to support 2^15 uninitialized extents,extent,2,52,7,Feature
+2.6.23,write support for preallocated blocks,extent,2,225,32,Feature
+2.6.23,fallocate support in ext4,extent,4,232,41,Feature
+2.6.23,ext4: statfs speed up,super,2,17,10,Performance
+2.6.23,ext4: fix error handling in ext4_create_journal,misc->code,1,5,2,Maintenance
+2.6.23,mistaken ext4_inode_bitmap for ext4_block_bitmap,misc->code,1,1,1,Maintenance
+2.6.23,ext4: fix deadlock in ext4_remount() and orphan list handling,super,1,8,0,Bug
+2.6.23,ext3/ext4: orphan list corruption due bad inode,dir,1,10,0,Bug
+2.6.23,ext3/ext4: orphan list check on destroy_inode,super,1,8,0,Reliability
+2.6.24,"ext3, ext4: avoid divide by zero",super,1,1,1,Bug
+2.6.24,Forbid user to change file flags on quota files,ioctl,5,21,0,Reliability
+2.6.24,"Revert ""ext2/ext3/ext4: add block bitmap validation""",balloc,1,0,41,Performance
+2.6.24,ext4: new export ops,misc->api,1,20,15,Maintenance
+2.6.24,ext4: lighten up resize transaction requirements,resize,1,43,3,Reliability
+2.6.24,ext4: fix setup_new_group_blocks locking,resize,1,3,3,Bug
+2.6.24,ext4: sparse fixes,"file,inode,xattr",6,24,18,Bug
+2.6.24,ext4: Convert ext4_extent_idx.ei_leaf to ext4_extent_idx.ei_leaf_lo,misc->api,2,3,3,Maintenance
+2.6.24,ext4: Convert ext4_extent.ee_start to ext4_extent.ee_start_lo,misc->api,2,4,6,Maintenance
+2.6.24,ext4: Convert s_r_blocks_count and s_free_blocks_count,misc->api,2,7,7,Maintenance
+2.6.24,ext4: Convert s_blocks_count to s_blocks_count_lo,misc->api,2,5,5,Maintenance
+2.6.24,ext4: Convert bg_inode_bitmap and bg_inode_table,misc->api,3,9,9,Maintenance
+2.6.24,ext4: Convert bg_block_bitmap to bg_block_bitmap_lo,misc->api,2,4,4,Maintenance
+2.6.24,ext4: FLEX_BG Kernel support v2.,super,2,10,3,Feature
+2.6.24,ext4: Fix sparse warnings,misc->code,2,11,9,Maintenance
+2.6.24,Ext4: Uninitialized Block Groups,"balloc,inode,resize,super",7,335,35,Feature
+2.6.24,ext4: remove #ifdef CONFIG_EXT4_INDEX,misc->code,3,2,39,Maintenance
+2.6.24,"ext4: Remove (partial, never completed) fragment support",misc->code,6,6,67,Maintenance
+2.6.24,JBD2/Ext4: Convert kmalloc to kzalloc in jbd2/ext4,misc->api,3,3,6,Maintenance
+2.6.24,Fix f_version type: should be u64 instead of unsigned long,dir,6,11,11,Bug
+2.6.24,ext2/4: use is_power_of_2(),misc->api,1,1,1,Maintenance
+2.6.24,ext2/ext3/ext4: add block bitmap validation,balloc,1,47,15,Reliability
+2.6.24,remove unused bh in calls to ext234_get_group_desc,misc->code,4,23,37,Maintenance
+2.6.24,ext4: show all mount options,super,2,73,0,Feature
+2.6.24,convert ill defined log2() to ilog2(),misc->api,4,9,18,Maintenance
+2.6.24,fs: mark nibblemap const,misc->api,5,5,5,Maintenance
+2.6.24,lib: percpu_counter_init error handling,super,1,15,6,Bug
+2.6.24,lib: percpu_counter_sum_positive,misc->api,5,9,9,Maintenance
+2.6.24,lib: percpu_counter_sub,super,4,8,3,Bug
+2.6.24,lib: percpu_counter_add,misc->api,8,17,17,Maintenance
+2.6.24,ext4: convert to new aops,misc->code,1,120,54,Maintenance
+2.6.25,ext4: add missing ext4_journal_stop(),resize,1,1,0,Bug
+2.6.25,ext4: ext4_find_next_zero_bit needs an aligned address on some arch,balloc,1,40,22,Bug
+2.6.25,ext4: set EXT4_EXTENTS_FL only for directory and regular files,inode,2,15,8,Bug
+2.6.25,ext4: Don't mark filesystem error if fallocate fails,extent,1,6,5,Reliability
+2.6.25,ext4: Fix BUG when writing to an unitialized extent,inode,2,57,3,Bug
+2.6.25,ext4: Don't use ext4_dec_count() if not needed,misc->code,1,3,3,Maintenance
+2.6.25,ext4: modify block allocation algorithm for the last group,"extent,inode",2,14,2,Performance
+2.6.25,ext4: Don't claim block from group which has corrupt bitmap,balloc,1,15,1,Reliability
+2.6.25,ext4: Get journal write access before modifying the extent tree,extent,1,8,3,Bug
+2.6.25,ext4: Fix memory and buffer head leak in callers to ext4_ext_find_extent(),extent,3,9,3,Bug
+2.6.25,ext4: Don't leave behind a half-created inode if ext4_mkdir() fails,dir,1,4,7,Bug
+2.6.25,ext4: Fix kernel BUG at fs/ext4/mballoc.c:910!,balloc,1,1,1,Bug
+2.6.25,ext4: Fix locking hierarchy violation in ext4_fallocate(),extent,1,3,7,Bug
+2.6.25,Remove incorrect BKL comments in ext4,misc->code,2,1,2,Maintenance
+2.6.25,"ext4: Add new ""development flag"" to the ext4 filesystem",misc->code,0,0,0,Maintenance
+2.6.25,ext4: Don't panic in case of corrupt bitmap,balloc,1,21,14,Reliability
+2.6.25,ext4: allocate struct ext4_allocation_context from a kmem cache,balloc,1,82,45,Performance
+2.6.25,ext4: Fix Direct I/O locking,inode,1,53,54,Bug
+2.6.25,ext4: Fix circular locking dependency with migrate and rm.,extent,1,74,43,Bug
+2.6.25,allow in-inode EAs on ext4 root inode,inode,1,1,7,Bug
+2.6.25,ext4: Fix null bh pointer dereference in mballoc,balloc,1,1,1,Bug
+2.6.25,ext4: Don't set EXTENTS_FL flag for fast symlinks,"extent,dir",2,7,0,Bug
+2.6.25,iget: stop EXT4 from using iget() and read_inode(),"inode,dir,resize,super",6,87,70,Reliability
+2.6.25,ext[234]: cleanup ext[234]_bg_num_gdb(),misc->api,0,0,0,Maintenance
+2.6.25,ext[234]: remove unused argument for ext[234]_find_goal(),misc->api,0,0,0,Maintenance
+2.6.25,ext[234]: use ext[234]_get_group_desc(),misc->code,1,5,18,Maintenance
+2.6.25,ext[234]: fix comment for nonexistent variable,misc->code,0,0,0,Maintenance
+2.6.25,ext4: Use the ext4_ext_actual_len() helper function,extent,1,13,11,Bug
+2.6.25,ext4: fix uniniatilized extent splitting error,extent,1,3,2,Bug
+2.6.25,ext4: Check for return value from sb_set_blocksize,super,1,5,10,Bug
+2.6.25,ext4: Add stripe= option to /proc/mounts,misc->code,1,2,0,Maintenance
+2.6.25,ext4: Enable the multiblock allocator by default,misc->code,1,7,0,Maintenance
+2.6.25,ext4: Add multi block allocator for ext4,balloc,13,4900,38,Feature
+2.6.25,ext4: Add new functions for searching extent tree,extent,2,146,0,Feature
+2.6.25,ext4: Add ext4_find_next_bit(),misc->code,9,62,0,Maintenance
+2.6.25,ext4: fix up EXT4FS_DEBUG builds,misc->compile,3,12,12,Maintenance
+2.6.25,ext4: Fix ext4_show_options to show the correct mount options.,super,1,15,11,Bug
+2.6.25,ext4: Add EXT4_IOC_MIGRATE ioctl,"extent,ioctl",6,572,3,Feature
+2.6.25,ext4: Add inode version support in ext4,"inode,super",5,45,22,Feature
+2.6.25,ext4: Take read lock during overwrite case.,inode,1,24,8,Performance
+2.6.25,ext4: Convert truncate_mutex to read write semaphore.,"extent,file,inode,ioctl,super",8,53,43,Performance
+2.6.25,ext4: Make ext4_get_blocks_wrap take the truncate_mutex early.,"extent,inode",3,16,64,Bug
+2.6.25,ext4: remove unused code from ext4_find_entry(),misc->code,1,0,4,Maintenance
+2.6.25,ext4: Check for the correct error return from,extent,1,5,5,Bug
+2.6.24,ext4: add block bitmap validation,balloc,1,81,18,Reliability
+2.6.25,ext4: Change the default behaviour on error,super,1,8,8,Reliability
+2.6.25,ext4: fix oops on corrupted ext4 mount,super,1,11,0,Reliability
+2.6.25,ext4/super.c: fix #ifdef's (CONFIG_EXT4_* -> CONFIG_EXT4DEV_*),misc->code,0,0,0,Maintenance
+2.6.25,ext4: Return after ext4_error in case of failures,balloc,1,6,2,Bug
+2.6.25,ext4: sync up block group descriptor with e2fsprogs.,misc->code,1,5,0,Maintenance
+2.6.25,ext4: export iov_shorten from kernel for ext4's use,misc->code,1,1,0,Maintenance
+2.6.25,ext4: store maxbytes for bitmapped  files and return EFBIG as appropriate,"file,inode",4,35,2,Reliability
+2.6.25,ext4: different maxbytes functions for bitmap & extent	files,misc->code,1,42,3,Maintenance
+2.6.25,ext4: Support large files,"super,inode",3,33,11,Feature
+2.6.25,ext4: Add support for 48 bit inode i_blocks.,"super,inode",3,119,11,Feature
+2.6.25,ext4: Rename i_dir_acl to i_size_high,misc->api,4,34,38,Maintenance
+2.6.25,ext4: Rename i_file_acl to i_file_acl_lo,misc->api,2,3,3,Maintenance
+2.6.25,ext4: Fix sparse warnings.,misc->code,0,0,0,Maintenance
+2.6.25,ext4: Introduce ext4_update_*_feature,misc->api,0,0,0,Maintenance
+2.6.25,ext4: fixes block group number being set to a negative value,misc->code,1,53,48,Maintenance
+2.6.25,"ext4: add ext4_group_t, and change all group variables to this type.","balloc,inode,resize,super",9,91,87,Feature
+2.6.25,ext4 extents: remove unneeded casts,misc->code,1,22,27,Maintenance
+2.6.25,ext4: Introduce ext4_lblk_t,"dir,extent,inode,dir,super",8,143,226,Feature
+2.6.25,ext4: Avoid rec_len overflow with 64KB block size,dir,3,63,46,Bug
+2.6.25,ext4: Support large blocksize up to PAGESIZE,super,2,7,2,Feature
+2.6.26,ext4: add missing unlock to an error path in ext4_quota_write(),super,1,3,1,Bug
+2.6.26,Ext4: Fix online resize block group descriptor corruption,resize,1,2,1,Bug
+2.6.26,ext4: enable barriers by default,misc->code,2,19,4,Maintenance
+2.6.26,ext4: Display the journal_async_commit mount option in /proc/mounts,misc->code,1,2,0,Maintenance
+2.6.26,ext4: fix online resize bug,resize,1,2,1,Bug
+2.6.26,ext4: Fix uninit block group initialization with FLEX_BG,balloc,1,62,9,Bug
+2.6.26,ext4: Fix use of uninitialized data with debug enabled.,misc->code,1,4,4,Maintenance
+2.6.26,ext4: Retry block allocation if new blocks are allocated from system zone.,balloc,2,47,17,Bug
+2.6.26,ext3/4: fix uninitialized bs in ext3/4_xattr_set_handle(),xattr,1,5,0,Bug
+2.6.26,ext4: mballoc fix mb_normalize_request algorithm for 1KB block size filesystems,balloc,1,9,10,Performance
+2.6.26,ext4: fix typos in messages and comments (journalled -> journaled),misc->code,1,7,7,Maintenance
+2.6.26,ext4: fix synchronization of quota files in journal=data mode,super,1,27,8,Bug
+2.6.26,ext4: Fix mount messages when quota disabled,misc->code,1,4,1,Maintenance
+2.6.26,ext4: correct mount option parsing to detect when quota options can be changed,super,1,20,6,Bug
+2.6.26,ext4: fix hot spins in mballoc after err_freebuddy and err_freemeta,balloc,1,3,5,Bug
+2.6.26,ext4: fix test ext_generic_write_end() copied return value,inode,1,8,6,Bug
+2.6.26,ext4: Move mballoc headers/structures to a seperate header file mballoc.h,misc->code,2,305,295,Maintenance
+2.6.26,ext4: cleanup for compiling mballoc with verification and debugging #defines,misc->compile,1,6,6,Maintenance
+2.6.26,ext4: don't use ext4_error in ext4_check_descriptors,super,1,13,16,Bug
+2.6.26,ext4: mark inode dirty after initializing the extent tree,inode,1,7,6,Bug
+2.6.26,ext4: update ctime and mtime for truncate with extents.,extent,1,2,0,Bug
+2.6.26,ext4: Don't do GFP_NOFS allocations after taking ext4_lock_group,balloc,1,15,14,Bug
+2.6.26,ext4: move headers out of include/linux,misc->code,32,2021,2024,Maintenance
+2.6.26,ext4: fix wrong gfp type under transaction,"extent,resize,xattr",4,9,9,Bug
+2.6.26,ext4: Fix hang on umount with quotas when journal is aborted,super,1,7,1,Bug
+2.6.26,ext4: Fix update of mtime and ctime on rename,dir,1,3,0,Bug
+2.6.26,ext4: replace remaining __FUNCTION__ occurrences,misc->code,10,97,97,Maintenance
+2.6.26,ext4: remove duplicate include of ext4_fs_i.h header file,misc->code,1,0,2,Maintenance
+2.6.26,ext4: make ext4_xattr_list() static,misc->api,2,3,8,Maintenance
+2.6.26,ext4: remove extra define of ext4_new_blocks_old from mballoc.c,misc->code,1,0,2,Maintenance
+2.6.26,ext4: check ext4_journal_get_write_access() errors,dir,1,7,2,Bug
+2.6.26,ext4: use ext4_get_group_desc(),misc->api,1,3,17,Maintenance
+2.6.26,ext4: use ext4_group_first_block_no(),misc->api,2,5,7,Maintenance
+2.6.26,ext4: convert byte order of constant instead of variable,misc->code,1,1,1,Maintenance
+2.6.26,ext4: le*_add_cpu conversion,misc->api,0,0,0,Maintenance
+2.6.26,ext4:  Convert list_for_each_rcu() to list_for_each_entry_rcu(),misc->api,1,5,13,Maintenance
+2.6.26,ext4: reduce mballoc stack usage with noinline_for_stack,misc->api,1,29,16,Maintenance
+2.6.26,Convert ext4 to use unlocked_ioctl,ioctl,4,6,13,Performance
+2.6.26,ext4: Cache the correct extent length for uninit extents,extent,1,43,5,Bug
+2.6.26,ext4: Return unwritten buffer head when trying to read from prealloc space.,extent,1,2,0,Bug
+2.6.26,ext4: make ext4_ext_get_blocks always return <= max_blocks,extent,1,11,1,Bug
+2.6.26,ext4: Fix fallocate to update the file size in each transaction,extent,1,38,51,Bug
+2.6.26,ext4: Fix race between migration and mmap write,"extent,inode",3,47,6,Bug
+2.6.26,ext4: zero out small extents when writing to prealloc area.,extent,1,63,0,Performance
+2.6.26,ext4: ENOSPC error handling for writing to an uninitialized extent,extent,1,99,7,Reliability
+2.6.26,ext4: Enable extent format for symlinks.,misc->code,2,4,2,Maintenance
+2.6.26,ext4: Fix fallocate error path,extent,1,24,2,Bug
+2.6.26,ext4: fix mount option parsing,super,1,1,1,Bug
+2.6.26,ext4: fdatasync should skip metadata writeout when overwriting,file,1,3,0,Performance
+2.6.26,ext4: check return of ext4_orphan_get properly,super,1,2,2,Bug
+2.6.26,ext4: use non-racy method for proc entries creation,balloc,1,4,11,Bug
+2.6.26,quota: ext4: make ext4 handle quotaon on remount,misc->code,1,8,7,Maintenance
+2.6.27,ext4: remove write-only variables from ext4_ordered_write_end,misc->code,1,0,4,Maintenance
+2.6.27,ext4: Update documentation to remind users to update mke2fs.conf,misc->doc,1,6,0,Maintenance
+2.6.27,ext4: Fix small file fragmentation,"balloc,inode",2,61,13,Performance
+2.6.27,ext4: Initialize writeback_index to 0 when allocating a new inode,inode,1,1,0,Bug
+2.6.27,ext4: make sure ext4_has_free_blocks returns 0 for ENOSPC,balloc,1,3,0,Performance
+2.6.27,ext4: journal credit fix for the delayed allocation's writepages() function,"extent,inode",2,58,24,Reliability
+2.6.27,ext4: Rework the ext4_da_writepages() function,inode,1,113,88,Reliability
+2.6.27,"ext4: journal credits reservation fixes for DIO, fallocate","extent,inode",3,30,27,Bug
+2.6.27,ext4: journal credits reservation fixes for extent file writepage,extent,3,49,62,Reliability
+2.6.27,ext4: journal credits calulation cleanup and fix for non-extent writepage,inode,3,108,34,Bug
+2.6.27,ext4: Fix bug where we return ENOSPC even though we have plenty of inodes,inode,1,1,1,Bug
+2.6.27,ext4: don't try to resize if there are no reserved gdt blocks left,resize,1,2,1,Reliability
+2.6.27,ext4: Use ext4_discard_reservations instead of mballoc-specific call,misc->api,1,1,1,Maintenance
+2.6.27,ext4: Fix ext4_dx_readdir hash collision handling,dir,1,15,5,Bug
+2.6.27,ext4: Fix delalloc release block reservation for truncate,inode,1,21,0,Bug
+2.6.27,ext4: Fix potential truncate BUG due to i_prealloc_list being non-empty,inode,1,3,2,Bug
+2.6.27,ext4: Handle unwritten extent properly with delayed allocation,inode,1,10,2,Bug
+2.6.27,ext4: unexport jbd2_journal_update_superblock,misc->code,1,0,1,Maintenance
+2.6.27,ext4: Cleanup whitespace and other miscellaneous style issues,misc->code,6,277,282,Maintenance
+2.6.27,ext4: improve ext4_fill_flex_info() a bit,misc->code,1,3,4,Maintenance
+2.6.27,ext4: Cleanup the block reservation code path,misc->code,2,67,42,Maintenance
+2.6.27,ext4: don't assume extents can't cross block groups when truncating,extent,1,7,3,Bug
+2.6.27,ext4: Fix lack of credits BUG() when deleting a badly fragmented inode,inode,1,29,1,Bug
+2.6.27,ext4: Fix ext4_ext_journal_restart(),extent,1,1,1,Bug
+2.6.27,ext4: fix ext4_da_write_begin error path,inode,1,5,2,Bug
+2.6.27,ext4: don't read inode block if the buffer has a write error,inode,1,10,0,Bug
+2.6.27,ext4: Don't allow lg prealloc list to be grow large.,balloc,2,193,30,Performance
+2.6.27,ext4: Convert the usage of NR_CPUS to nr_cpu_ids.,misc->code,1,2,2,Maintenance
+2.6.27,ext4: Improve error handling in mballoc,balloc,1,23,11,Reliability
+2.6.27,ext4: lock block groups when initializing,"balloc,inode,super",4,12,1,Bug
+2.6.27,ext4: sync up block and inode bitmap reading functions,misc->code,2,33,26,Maintenance
+2.6.27,ext4: Allow read/only mounts with corrupted block group checksums,super,1,23,1,Reliability
+2.6.27,ext4: Fix data corruption when writing to prealloc area,extent,1,23,18,Bug
+2.6.27,ext4: Documention update for new ordered mode and delayed allocation,misc->doc,1,14,7,Maintenance
+2.6.27,ext4: do not set extents feature from the kernel,"inode,super",2,18,9,Reliability
+2.6.27,ext4: Don't allow nonextenst mount option for large filesystem,super,1,15,0,Reliability
+2.6.27,ext4: Enable delalloc by default.,misc->code,1,22,1,Maintenance
+2.6.27,ext4: delayed allocation i_blocks fix for stat,inode,3,29,0,Bug
+2.6.27,ext4: fix delalloc i_disksize early update issue,inode,1,47,16,Bug
+2.6.27,ext4: Handle page without buffers in ext4_*_writepage(),inode,1,124,45,Reliability
+2.6.27,ext4: Add ordered mode support for delalloc,inode,2,58,10,Feature
+2.6.27,ext4: Invert lock ordering of page_lock and transaction start in delalloc,"extent,inode",2,152,59,Bug
+2.6.27,ext4: delayed allocation ENOSPC handling,"balloc,dir,extent,inode,super",9,257,50,Feature
+2.6.27,percpu_counter: new function percpu_counter_sum_and_set,misc->api,3,6,17,Maintenance
+2.6.27,ext4: Add delayed allocation support in data=writeback mode,inode,3,700,6,Feature
+2.6.27,ext4: Use new framework for data=ordered mode in JBD2,"inode,super",4,59,112,Feature
+2.6.27,ext4: Fix lock inversion in ext4_ext_truncate(),extent,1,4,3,Bug
+2.6.27,ext4: Invert the locking order of page_lock and transaction start,"extent,inode",3,155,156,Bug
+2.6.27,ext4: Use page_mkwrite vma_operations to get mmap write notification.,"file,inode",3,80,1,Bug
+2.6.27,ext4: Documentation updates.,misc->doc,1,62,44,Maintenance
+2.6.27,ext4: fix online resize with mballoc,"balloc,resize",3,234,56,Bug
+2.6.27,ext4: use atomic functions to set bh_state,extent,1,3,4,Bug
+2.6.27,ext4: Set journal pointer to NULL when journal is released,super,1,2,0,Bug
+2.6.27,ext4: mballoc avoid use root reserved blocks for non root allocation,balloc,3,41,19,Bug
+2.6.27,ext4: call blkdev_issue_flush on fsync,file,1,4,0,Bug
+2.6.27,ext4: cleanup block allocator,misc->code,5,84,59,Maintenance
+2.6.27,ext4: Use inode preallocation with -o noextents,"balloc,extent,inode,xattr",5,95,24,Performance
+2.6.27,ext4: fix ext4_init_block_bitmap() for metablock block group,balloc,1,1,6,Bug
+2.6.27,ext4: Fix sparse warning,misc->code,7,23,23,Maintenance
+2.6.27,ext4: cleanup never-used magic numbers from htree code,misc->code,1,2,2,Maintenance
+2.6.27,ext4: Fix ext4_ext_journal_restart() to reflect errors up to the caller,extent,1,8,11,Bug
+2.6.27,ext4: Make ext4_ext_find_extent fills ext_path completely,extent,1,4,1,Bug
+2.6.27,ext4: return error when calling ext4_ext_split failed,extent,1,2,0,Bug
+2.6.27,ext4: Update i_disksize properly when allocating from fallocate area.,extent,1,3,3,Bug
+2.6.27,ext4: remove quota allocation when ext4_mb_new_blocks fails,balloc,1,6,4,Bug
+2.6.27,ext4: remove redundant code in ext4_fill_super(),misc->code,1,0,5,Maintenance
+2.6.27,ext4: New inode allocation for FLEX_BG meta-data groups.,"balloc,inode,super",6,209,1,Feature
+2.6.27,ext4: replace __FUNCTION__ occurrences,misc->code,2,9,9,Maintenance
+2.6.27,ext4: fix error processing in mb_free_blocks,balloc,1,5,8,Bug
+2.6.27,ext4: error proc entry creation when the fs/ext4 is not correctly created,balloc,1,4,0,Bug
+2.6.27,ext4: fix build failure if DX_DEBUG is enabled,misc->compile,1,10,9,Maintenance
+2.6.27,ext4: Remove unused variable from ext4_show_options,misc->code,1,0,1,Maintenance
+2.6.27,ext4: Rename read_block_bitmap() to ext4_read_block_bitmap(),misc->api,4,13,13,Maintenance
+2.6.27,ext4: remove double definitions of xattr macros,misc->code,2,2,6,Maintenance
+2.6.27,ext4: miscellaneous error checks and coding cleanups for mballoc,misc->code,1,7,7,Maintenance
+2.6.27,ext4: add error processing when calling ext4_mb_init_cache in mballoc,balloc,1,20,7,Bug
+2.6.27,ext4: Fix ext4_mb_init_cache return error,balloc,1,1,0,Bug
+2.6.27,ext4: improve some code in rb tree part of dir.c,misc->code,1,4,10,Maintenance
+2.6.27,ext4: switch to seq_files,misc->code,1,34,34,Maintenance
+2.6.27,ext4: Use BUG_ON() instead of BUG(),misc->api,1,1,2,Maintenance
+2.6.27,ext4: start searching for the right extent from the goal group.,balloc,1,6,4,Bug
+2.6.27,"ext4: fix comments to say ""ext4""",misc->code,0,0,0,Maintenance
+2.6.27,ext4: Fix mb_find_next_bit not to return larger than max,balloc,1,12,8,Bug
+2.6.27,ext4: validate directory entry data before use,dir,1,12,10,Bug
+2.6.27,ext4: handle deleting corrupted indirect blocks,inode,1,15,1,Bug
+2.6.27,ext4: handle corrupted orphan list at mount,inode,3,24,6,Bug
+2.6.28,"revert ""percpu_counter: new function percpu_counter_sum_and_set""",balloc,3,6,17,Bug
+2.6.28,ext4: add checksum calculation when clearing UNINIT flag in ext4_new_inode,inode,1,2,0,Bug
+2.6.28,ext4: Mark the buffer_heads as dirty and uptodate after prepare_write,inode,1,2,0,Bug
+2.6.28,ext4: calculate journal credits correctly,inode,1,3,2,Bug
+2.6.28,ext4: wait on all pending commits in ext4_sync_fs(),super,1,8,11,Bug
+2.6.28,ext4: Convert to host order before using the values.,super,1,2,3,Bug
+2.6.28,ext4: fix missing ext4_unlock_group in error path,balloc,1,1,0,Bug
+2.6.28,delay capable() check in ext4_has_free_blocks(),balloc,1,14,12,Bug
+2.6.28,merge ext4_claim_free_blocks & ext4_has_free_blocks,misc->api,2,17,43,Maintenance
+2.6.28,ext4: fix a bug accessing freed memory in ext4_abort,super,1,7,4,Bug
+2.6.28,ext4: Fix duplicate entries returned from getdents() system call,dir,1,8,12,Bug
+2.6.28,ext4: remove unused variable in ext4_get_parent,misc->code,1,0,1,Maintenance
+2.6.28,ext4: Remove automatic enabling of the HUGE_FILE feature flag,"inode,super",2,21,88,Bug
+2.6.28,ext4: Replace hackish ext4_mb_poll_new_transaction with commit callback,misc->code,6,29,75,Maintenance
+2.6.28,ext4: Update Documentation/filesystems/ext4.txt,misc->doc,1,15,17,Maintenance
+2.6.28,"ext4: Remove unused mount options: nomballoc, mballoc, nocheck",misc->code,2,2,10,Maintenance
+2.6.28,ext4: Remove compile warnings when building w/o CONFIG_PROC_FS,misc->compile,1,6,1,Maintenance
+2.6.28,ext4: Add missing newlines to printk messages,misc->code,1,3,3,Maintenance
+2.6.28,ext4: Fix file fragmentation during large file write.,inode,1,57,34,Performance
+2.6.28,ext4: Use tag dirty lookup during mpage_da_submit_io,misc->code,1,13,17,Maintenance
+2.6.28,ext4: let the block device know when unused blocks can be discarded,misc->code,2,9,0,Maintenance
+2.6.28,ext4: fix kconfig typo and extra whitespace,misc->code,1,2,2,Maintenance
+2.6.28,ext4: fix build failure without procfs,misc->compile,1,2,0,Maintenance
+2.6.28,ext4: add an option to control error handling on file data,super,5,28,0,Feature
+2.6.28,ext4: add checks for errors from jbd2,"ioctl,super",2,27,8,Bug
+2.6.28,ext4: Don't reuse released data blocks until transaction commits,balloc,1,10,2,Bug
+2.6.28,ext4: Use an rbtree for tracking blocks freed during transaction.,balloc,2,133,77,Performance
+2.6.28,ext4: Do mballoc init before doing filesystem recovery,super,1,15,15,Bug
+2.6.28,ext4: Free ext4_prealloc_space using kmem_cache_free,balloc,1,1,1,Bug
+2.6.28,ext4: Fix Kconfig typo for ext4dev,misc->code,1,1,1,Maintenance
+2.6.28,ext4: Remove an old reference to ext4dev in Makefile comment,misc->code,1,1,1,Maintenance
+2.6.28,ext4: Rename ext4dev to ext4,misc->code,13,123,88,Maintenance
+2.6.28,ext4: Avoid double dirtying of super block in ext4_put_super(),misc->code,1,0,2,Maintenance
+2.6.28,Hook ext4 to the vfs fiemap interface.,extent,5,271,2,Feature
+2.6.28,ext4: fix xattr deadlock,xattr,1,6,0,Bug
+2.6.28,ext4: Add debugging markers that can be used by systemtap,"file,super",4,16,0,Reliability
+2.6.28,ext4: fix initialization of UNINIT bitmap blocks,"balloc,inode",3,9,3,Bug
+2.6.28,ext4: Remove old legacy block allocator,misc->code,12,40,1528,Maintenance
+2.6.28,ext4: Use readahead when reading an inode from the inode table,"inode,super",6,101,72,Feature
+2.6.28,ext4: Improve the documentation for ext4's /proc tunables,misc->doc,1,33,37,Maintenance
+2.6.28,ext4: Combine proc file handling into a single set of functions,misc->code,4,70,69,Maintenance
+2.6.28,ext4: move /proc setup and teardown out of mballoc.c,misc->code,5,42,56,Maintenance
+2.6.28,ext4: Don't use 'struct dentry' for internal lookups,dir,1,33,35,Performance
+2.6.28,ext4: use percpu data structures for lg_prealloc_list,balloc,1,5,8,Performance
+2.6.28,ext4: Renumber EXT4_IOC_MIGRATE,misc->code,1,4,3,Maintenance
+2.6.28,ext4: hook the ext3 migration interface to the EXT4_IOC_SETFLAGS ioctl,misc->code,2,17,2,Maintenance
+2.6.28,ext4: elevate write count for migrate ioctl,"extent,ioctl",3,22,12,Bug
+2.6.28,ext4: add missing unlock in ext4_check_descriptors() on error path,super,1,3,1,Bug
+2.6.28,ext4: fix #11321: create /proc/ext4/*/stats more carefully,balloc,1,13,3,Bug
+2.6.28,Update flex_bg free blocks and free inodes counters when resizing.,"resize,super",2,14,2,Bug
+2.6.28,ext4: Avoid printk floods in the face of directory corruption,dir,1,8,3,Reliability
+2.6.28,ext4: Properly update i_disksize.,"extent,inode",3,46,28,Bug
+2.6.28,ext4: truncate block allocated on a failed ext4_write_begin,inode,1,14,0,Bug
+2.6.28,ext4: Retry block allocation if we have free blocks left,balloc,1,57,24,Bug
+2.6.28,ext4: Don't add the inode to journal handle until after the block is allocated,"balloc,inode",2,16,22,Bug
+2.6.28,ext4: Fix ext4 nomballoc allocator for ENOSPC,balloc,1,10,8,Bug
+2.6.28,ext4: Signed arithmetic fix,misc->code,2,12,12,Maintenance
+2.6.28,ext4: Switch to non delalloc mode when we are low on free blocks count.,inode,1,50,2,Reliability
+2.6.28,ext4: Add percpu dirty block accounting.,"balloc,inode,super",5,73,51,Feature
+2.6.28,ext4: Retry block reservation,balloc,3,24,5,Bug
+2.6.28,ext4: Make sure all the block allocation paths reserve blocks,"balloc,inode",4,69,30,Bug
+2.6.28,ext4: invalidate pages if delalloc block allocation fails.,inode,1,73,12,Bug
+2.6.28,ext4: Fix whitespace checkpatch warnings/errors,misc->code,18,350,350,Maintenance
+2.6.28,ext4: Fix long long checkpatch warnings,misc->compile,1,4,4,Maintenance
+2.6.28,ext4: Add printk priority levels to clean up checkpatch warnings,misc->code,7,71,54,Maintenance
+2.6.29,ext4: fix bb_prealloc_list corruption due to wrong group locking,balloc,1,7,2,Bug
+2.6.29,ext4: fix bogus BUG_ONs in in mballoc code,balloc,1,2,2,Bug
+2.6.29,ext4: Print the find_group_flex() warning only once,inode,1,3,1,Reliability
+2.6.29,ext4: fix header check in ext4_ext_search_right() for deep extent trees.,extent,1,4,2,Bug
+2.6.29,ext4: fix ext4_free_inode() vs. ext4_claim_inode() race,inode,1,5,3,Bug
+2.6.29,ext4: don't call jbd2_journal_force_commit_nested without journal,"balloc,inode",2,4,2,Bug
+2.6.29,ext4: Reorder fs/Makefile so that ext2 root fs's are mounted using ext2,misc->code,1,4,2,Maintenance
+2.6.29,ext4: Remove duplicate call to ext4_commit_super() in ext4_freeze(),super,1,0,1,Performance
+2.6.29,ext4: Fix deadlock in ext4_write_begin() and ext4_da_write_begin(),inode,1,8,1,Bug
+2.6.29,ext4: Add fallback for find_group_flex,inode,1,7,0,Bug
+2.6.29,ext4: Fix NULL dereference in ext4_ext_migrate()'s error handling,extent,1,3,5,Bug
+2.6.29,ext4: Implement range_cyclic in ext4_da_writepages instead of write_cache_pages,inode,1,19,2,Bug
+2.6.29,ext4: Initialize preallocation list_head's properly,balloc,1,3,0,Bug
+2.6.29,ext4: Fix lockdep warning,balloc,1,16,13,Bug
+2.6.29,ext4: Fix to read empty directory blocks correctly in 64k,misc->code,1,1,1,Maintenance
+2.6.29,"Revert ""ext4: wait on all pending commits in ext4_sync_fs()""",super,1,7,4,Performance
+2.6.29,ext4: Remove bogus BUG() check in ext4_bmap(),inode,1,0,3,Bug
+2.6.29,ext4: Fix building with EXT4FS_DEBUG,misc->compile,3,5,5,Feature
+2.6.29,ext4: Initialize the new group descriptor when resizing the filesystem,resize,1,2,1,Bug
+2.6.29,ext4: Fix ext4_free_blocks() w/o a journal when files have indirect blocks,inode,1,1,1,Bug
+2.6.29,ext4: Add sanity check to make_indexed_dir,dir,1,15,6,Bug
+2.6.29,ext4: only use i_size_high for regular files,inode,2,7,4,Bug
+2.6.29,generic swap(): ext4: remove local swap() macro,misc->api,1,0,4,Maintenance
+2.6.29,"ext4: Remove ""extents"" mount option",misc->code,0,0,0,Maintenance
+2.6.29,"ext4: Make printk's consistently prefixed with ""EXT4-fs: """,misc->code,0,0,0,Maintenance
+2.6.29,ext4: Add sanity checks for the superblock before mounting the filesystem,super,1,20,10,Bug
+2.6.29,ext4: Add mount option to set kjournald's I/O priority,super,4,36,5,Feature
+2.6.29,ext4: Add default allocation routines for quota structures,misc->code,1,3,1,Maintenance
+2.6.29,ext4: Use sb_any_quota_loaded() instead of sb_any_quota_enabled(),misc->api,1,4,7,Maintenance
+2.6.29,ext4: Add markers for better debuggability,"balloc,inode",3,116,3,Reliability
+2.6.29,ext4: Remove code to create the journal inode,misc->code,4,4,141,Maintenance
+2.6.29,ext4: provide function to release metadata pages under memory pressure,super,1,20,0,Reliability
+2.6.29,ext4: Fix s_dirty_blocks_counter if block allocation failed with nodelalloc,balloc,1,8,1,Bug
+2.6.29,ext4: Init the complete page while building buddy cache,balloc,1,2,1,Bug
+2.6.29,ext4: Don't allow new groups to be added during block allocation,balloc,2,18,3,Bug
+2.6.29,ext4: mark the blocks/inode bitmap beyond end of group as used,"inode,balloc,resize",3,5,7,Reliability
+2.6.29,ext4: Use new buffer_head flag to check uninit group bitmaps initialization,"balloc,inode",4,85,6,Bug
+2.6.29,ext4: Fix the race between read_inode_bitmap() and ext4_new_inode(),inode,1,86,60,Bug
+2.6.29,ext4: code cleanup,misc->code,1,3,2,Maintenance
+2.6.29,ext4: Use high 16 bits of the block group descriptor's free counts fields,misc->code,7,149,62,Maintenance
+2.6.29,ext4: Fix race between read_block_bitmap() and mark_diskspace_used(),balloc,1,10,5,Bug
+2.6.29,ext4: fix BUG when calling ext4_error with locked block group,"balloc,super",4,105,64,Bug
+2.6.29,nfsd race fixes: ext4,"inode,dir",2,18,2,Bug
+2.6.29,ext4: ensure fast symlinks are NUL-terminated,inode,1,5,2,Reliability
+2.6.29,ext4: Fix lockdep recursive locking warning,balloc,1,1,1,Bug
+2.6.29,ext4: don't use blocks freed but not yet committed in buddy cache init,balloc,1,60,22,Bug
+2.6.29,CRED: Wrap task credential accesses in the Ext4 filesystem,misc->api,2,3,3,Maintenance
+2.6.29,ext4: cleanup mballoc header files,misc->code,2,20,21,Maintenance
+2.6.29,ext4: Use EXT4_GROUP_INFO_NEED_INIT_BIT during resize,misc->code,5,230,111,Maintenance
+2.6.29,ext4: Add blocks added during resize to bitmap,"balloc,resize",3,34,118,Feature
+2.6.29,ext4: sparse fixes,misc->code,6,24,18,Maintenance
+2.6.29,ext4: Change unsigned long to unsigned int,"balloc,dir,extent,inode",9,77,79,Performance
+2.6.29,ext4: Make ext4_group_t be an unsigned int,"balloc,super,resize,inode",7,49,49,Performance
+2.6.29,ext4: Remove i_ext_generation from ext4_inode_info structure,misc->code,3,0,8,Maintenance
+2.6.29,ext4: add fsync batch tuning knobs,super,7,91,8,Feature
+2.6.29,ext4: Don't overwrite allocation_context ac_status,balloc,1,2,0,Bug
+2.6.29,ext4: remove extraneous newlines from calls to ext4_error() and ext4_warning(),misc->code,5,19,20,Maintenance
+2.6.29,ext4: Allow ext4 to run without a journal,"balloc,extent,inode,ioctl,dir,resize,super,xattr",13,452,224,Feature
+2.6.29,ext4: Widen type of ext4_sb_info.s_mb_maxs(),balloc,2,4,1,Bug
+2.6.29,ext4: When resizing set the EXT4_BG_INODE_ZEROED flag for new block groups,misc->code,1,1,0,Maintenance
+2.6.29,ext4: Use simple_strtol() instead of simple_strtoul() in ext4_ui_proc_open,misc->api,1,3,6,Maintenance
+2.6.29,ext4: fix build warning,misc->compile,1,1,1,Maintenance
+2.6.29,ext4: avoid ext4_error when mounting a fs with a single bg,super,1,0,4,Bug
+2.6.29,ext4: Fix the delalloc writepages to allocate blocks at the right offset.,inode,1,39,17,Bug
+2.6.29,ext4: tone down ext4_da_writepages warnings,inode,1,15,1,Reliability
+2.6.29,ext4: remove do_blk_alloc(),misc->code,3,17,38,Maintenance
+2.6.29,ext4: remove ext4_new_meta_block(),misc->code,4,5,22,Maintenance
+2.6.29,ext4: remove ext4_new_blocks() and call ext4_mb_new_blocks() directly,misc->code,3,13,28,Maintenance
+2.6.29,ext3/4: Fix loop index in do_split() so it is signed,misc->compile,1,2,2,Maintenance
+2.6.29,ext4: Add support for non-native signed/unsigned htree hash algorithms,"dir,super",5,90,10,Feature
+2.6.29,ext4: fix printk format warning,misc->compile,2,3,3,Maintenance
+2.6.30,ext4: Fix race in ext4_inode_info.i_cached_extent,extent,1,12,5,Bug
+2.6.30,ext4: Clear the unwritten buffer_head flag after the extent is initialized,inode,1,13,0,Bug
+2.6.30,ext4: Use a fake block number for delayed new buffer_head,misc->code,1,5,1,Maintenance
+2.6.30,ext4: Fix sub-block zeroing for writes into preallocated extents,"extent,inode",2,9,0,Bug
+2.6.30,ext4: Do not try to validate extents on special files,inode,1,6,2,Bug
+2.6.30,ext4: Ignore i_file_acl_high unless EXT4_FEATURE_INCOMPAT_64BIT is present,inode,1,1,3,Reliability
+2.6.30,ext4: Fix softlockup caused by illegal i_file_acl value in on-disk inode,inode,1,11,1,Bug
+2.6.30,ext4: Fix potential inode allocation soft lockup in Orlov allocator,inode,1,2,1,Bug
+2.6.30,ext4: Make the extent validity check more paranoid,extent,1,12,6,Reliability
+2.6.30,ext4: Remove code handling bio_alloc failure with __GFP_WAIT,misc->code,1,0,2,Maintenance
+2.6.30,ext4: really print the find_group_flex fallback warning only once,misc->code,1,2,1,Maintenance
+2.6.30,ext4: check block device size on mount,super,1,9,0,Reliability
+2.6.30,ext4: Fix off-by-one-error in ext4_valid_extent_idx(),extent,1,1,1,Bug
+2.6.30,ext4: Fix big-endian problem in __ext4_check_blockref(),inode,1,4,4,Bug
+2.6.30,ext4: Regularize mount options,misc->code,2,45,10,Maintenance
+2.6.30,ext4: fix locking typo in mballoc which could cause soft lockup hangs,balloc,1,1,1,Bug
+2.6.30,ext4: fix typo which causes a memory leak on error path,balloc,1,1,1,Bug
+2.6.30,ext4: Rename pa_linear to pa_type,misc->code,2,17,11,Maintenance
+2.6.30,ext4: add checks of block references for non-extent inodes,inode,1,52,7,Reliability
+2.6.30,ext4: Check for an valid i_mode when reading the inode from disk,inode,1,9,1,Reliability
+2.6.30,ext4: Use lowercase names of quota functions,misc->api,7,20,20,Maintenance
+2.6.30,ext4: quota reservation for delayed allocation,"inode,malloc,super",4,65,21,Feature
+2.6.30,ext4: Remove unnecessary quota functions,misc->code,1,2,42,Maintenance
+2.6.30,ext4: Add auto_da_alloc mount option,"inode,dir,super",4,17,15,Feature
+2.6.30,ext4: Use struct flex_groups to calculate get_orlov_stats(),"inode,super",3,31,17,Performance
+2.6.30,ext4: Use atomic_t's in struct flex_groups,"balloc,inode,resize,super",6,30,37,Performance
+2.6.30,ext4: remove /proc tuning knobs,misc->code,5,30,177,Maintenance
+2.6.30,ext4: Add sysfs support,super,3,290,0,Feature
+2.6.30,ext4: Track lifetime disk writes,super,3,13,1,Feature
+2.6.30,ext4: Fix discard of inode prealloc space with delayed allocation.,"file,inode",2,10,2,Bug
+2.6.30,ext4: Automatically allocate delay allocated blocks on rename,dir,1,4,1,Bug
+2.6.30,ext4: Automatically allocate delay allocated blocks on close,"file,inode",3,8,0,Bug
+2.6.30,ext4: add EXT4_IOC_ALLOC_DA_BLKS ioctl,"inode,ioctl",3,59,0,Feature
+2.6.30,ext4: Simplify delalloc code by removing mpage_da_writepages(),misc->code,1,32,42,Maintenance
+2.6.30,ext4: Save stack space by removing fake buffer heads,inode,1,39,44,Performance
+2.6.30,ext4: Simplify delalloc implementation by removing mpd.get_block,misc->code,1,58,67,Maintenance
+2.6.30,ext4: Add fine print for the 32000 subdirectory limit,misc->code,1,4,1,Maintenance
+2.6.30,ext4: Validate extent details only when read from the disk,"extent,inode",3,29,7,Performance
+2.6.30,ext4: Add checks to validate extent entries.,extent,1,71,10,Reliability
+2.6.30,ext4: return -EIO not -ESTALE on directory traversal through deleted inode,dir,1,10,2,Bug
+2.6.30,ext4: New inode/block allocation algorithms for flex_bg filesystems,"extent,inode,balloc",6,216,58,Feature
+2.6.30,ext4: tighten restrictions on inode flags,"inode,ioctl",3,23,11,Reliability
+2.6.30,ext4: don't inherit inappropriate inode flags from parent,inode,2,8,1,Bug
+2.6.30,ext4: allocate ->s_blockgroup_lock separately,super,2,11,3,Performance
+2.6.30,ext4: New rec_len encoding for very large blocksizes,dir,3,98,69,Feature
+2.6.30,ext4: Use unsigned int for blocksize in dx_make_map() and dx_pack_dirents(),misc->code,1,8,8,Maintenance
+2.6.30,ext4: remove call to ext4_group_desc() in ext4_group_used_meta_blocks(),balloc,1,3,6,Bug
+2.6.30,ext4: Remove stale block allocator references from ext4.h,misc->code,4,0,18,Maintenance
+2.6.31,ext4: Fix ext4_mb_initialize_context() to initialize all fields,balloc,1,2,18,Bug
+2.6.31,ext4: fix null handler of ioctls in no journal mode,ioctl,1,12,8,Bug
+2.6.31,ext4: Fix buffer head reference leak in no-journal mode,"inode,other",3,8,4,Bug
+2.6.31,switch ext4 to inode->i_acl,misc->code,5,10,40,Maintenance
+2.6.31,ext4: Don't update ctime for non-extent-mapped inodes,inode,1,1,5,Bug
+2.6.31,ext4: Move __ext4_journalled_writepage() to avoid forward declaration,misc->code,1,54,58,Maintenance
+2.6.31,ext4: Fix mmap/truncate race when blocksize < pagesize && !nodellaoc,misc->code,2,58,221,Maintenance
+2.6.31,ext4: Fix mmap/truncate race when blocksize < pagesize && delayed allocation,inode,1,8,15,Bug
+2.6.31,ext4: Fix up whitespace issues in fs/ext4/inode.c,misc->code,1,103,97,Maintenance
+2.6.31,ext4: Fix 64-bit block type problem on 32-bit platforms,balloc,2,5,5,Bug
+2.6.31,ext4: teach the inode allocator to use a goal inode number,"inode,extent,dir,super",6,36,10,Feature
+2.6.31,ext4: Use a hash of the topdir directory name for the Orlov parent group,misc->code,4,22,13,Maintenance
+2.6.31,"ext4: document the ""abort"" mount option",misc->doc,0,0,0,Maintenance
+2.6.31,ext4: move the abort flag from s_mount_opts to s_mount_flags,misc->code,3,9,16,Maintenance
+2.6.31,ext4: update the s_last_mounted field in the superblock,misc->code,2,42,1,Maintenance
+2.6.31,ext4: change s_mount_opt to be an unsigned int,misc->code,3,3,3,Maintenance
+2.6.31,ext4: online defrag -- Add EXT4_IOC_MOVE_EXT ioctl,extent,6,1378,3,Feature
+2.6.31,ext4: Avoid corrupting the uninitialized bit in the extent during truncate,extent,1,6,2,Bug
+2.6.31,ext4: Don't treat a truncation of a zero-length file as replace-via-truncate,misc->code,1,2,1,Maintenance
+2.6.31,ext4: fix dx_map_entry to support 256k directory blocks,dir,1,3,2,Feature
+2.6.31,ext4: truncate the file properly if we fail to copy data from userspace,inode,1,102,26,Bug
+2.6.31,ext4: Avoid leaking blocks after a block allocation failure,inode,1,22,2,Bug
+2.6.31,ext4: Change all super.c messages to print the device,misc->code,2,235,229,Maintenance
+2.6.31,ext4: Get rid of EXTEND_DISKSIZE flag of ext4_get_blocks_handle(),misc->code,3,5,33,Maintenance
+2.6.31,ext4: Don't look at buffer_heads outside i_size.,inode,1,16,12,Bug
+2.6.31,ext4: Fix goal inum check in the inode allocator,inode,1,1,1,Bug
+2.6.31,ext4: fix no journal corruption with locale-gen,other,1,2,2,Bug
+2.6.31,ext4: Calculate required journal credits for inserting an extent properly,extent,1,1,0,Bug
+2.6.31,ext4: Fix truncation of symlinks after failed write,inode,1,13,13,Bug
+2.6.31,ext4: Use rcu_barrier() on module unload.,balloc,1,5,1,Bug
+2.6.31,ext4: naturally align struct ext4_allocation_request,other,1,7,7,Performance
+2.6.31,ext4: mark several more functions in mballoc.c as noinline,misc->api,1,16,8,Maintenance
+2.6.31,ext4: Fix potential reclaim deadlock when truncating partial block,inode,1,2,1,Bug
+2.6.31,ext4: Fix type warning on 64-bit platforms in tracing events header,misc->compile,1,2,1,Maintenance
+2.6.31,ext4: super.c whitespace cleanup,misc->code,1,61,56,Maintenance
+2.6.31,ext4: Clean up calls to ext4_get_group_desc(),misc->code,2,2,4,Maintenance
+2.6.31,ext4: remove unused function __ext4_write_dirty_metadata,misc->code,1,0,19,Maintenance
+2.6.31,ext4: Fix memory leak in ext4_fill_super() in case of a failed mount,super,1,1,0,Bug
+2.6.31,ext4: down i_data_sem only for read when walking tree for fiemap,extent,1,2,2,Performance
+2.6.31,ext4: Add a comprehensive block validity check to ext4_get_blocks(),"balloc,extent,inode,super",7,332,39,Feature
+2.6.31,ext4: Clean up ext4_get_blocks() so it does not depend on bh_result->b_state,misc->code,2,41,30,Maintenance
+2.6.31,ext4: Merge ext4_da_get_block_write() into mpage_da_map_blocks(),misc->code,1,43,67,Maintenance
+2.6.31,ext4: Add BUG_ON debugging checks to noalloc_get_block_write(),inode,1,3,0,Reliability
+2.6.31,ext4: Add documentation to the ext4_*get_block* functions,misc->code,0,0,0,Maintenance
+2.6.31,ext4: Define a new set of flags for ext4_get_blocks(),misc->code,4,57,46,Maintenance
+2.6.31,ext4: Rename ext4_get_blocks_wrap() to be ext4_get_blocks(),misc->api,4,25,27,Maintenance
+2.6.31,ext4: Rename ext4_get_blocks_handle() to be ext4_ind_get_blocks(),misc->api,1,6,6,Maintenance
+2.6.31,ext4: Simplify function signature for ext4_da_get_block_write(),misc->api,1,3,3,Maintenance
+2.6.31,ext4: Fix spinlock assertions on UP systems,balloc,2,5,11,Bug
+2.6.31,ext4: Convert ext4_lock_group to use sb_bgl_lock,misc->code,5,59,92,Maintenance
+2.6.31,ext4: fix the length returned by fiemap for an unallocated extent,extent,1,8,1,Bug
+2.6.31,ext4: fix for fiemap last-block test,extent,1,3,3,Bug
+2.6.31,ext4: hook fiemap operation for directories,misc->code,1,1,0,Maintenance
+2.6.31,ext4: Make the length of the mb_history file tunable,"balloc,super",2,24,7,Feature
+2.6.31,ext4: Move fs/ext4/group.h into ext4.h,misc->code,7,17,34,Maintenance
+2.6.31,ext4: Move fs/ext4/namei.h into ext4.h,misc->code,4,1,10,Maintenance
+2.6.31,ext4: Move the ext4_sb.h header file into ext4.h,misc->code,2,140,167,Maintenance
+2.6.31,ext4: Move the ext4_i.h header file into ext4.h,misc->code,2,121,141,Maintenance
+2.6.31,ext4: Don't avoid using BLOCK_UNINIT block groups in mballoc,balloc,1,1,8,Performance
+2.6.31,ext4: avoid unnecessary spinlock in critical POSIX ACL path,xattr,1,9,6,Performance
+2.6.31,ext4: convert instrumentation from markers to tracepoints,misc->api,7,774,121,Maintenance
+2.6.31,ext4: Replace lock/unlock_super() with an explicit lock for resizing,"resize,super",3,20,17,Performance
+2.6.31,ext4: Replace lock/unlock_super() with an explicit lock for the orphan list,"dir,super",3,13,9,Performance
+2.6.31,ext4: ext4_mark_recovery_complete() doesn't need to use lock_super,super,1,1,10,Performance
+2.6.31,ext4: Remove outdated comment about lock_super(),misc->code,1,0,8,Maintenance
+2.6.31,ext4: Avoid races caused by on-line resizing and SMP memory reordering,"balloc,inode,super",6,67,55,Bug
+2.6.31,ext4: Use separate super_operations structure for no_journal filesystems,misc->code,1,57,51,Maintenance
+2.6.31,ext4: Fix and simplify s_dirt handling,super,1,3,11,Performance
+2.6.31,ext4: Simplify ext4_commit_super()'s function signature,misc->api,1,16,17,Maintenance
+2.6.31,ext4: Use is_power_of_2() for clarity,misc->api,1,2,3,Maintenance
+2.6.31,ext4: Fallback to vmalloc if kmalloc can't allocate s_flex_groups array,super,1,19,3,Reliability
+2.6.31,ext4: Mark the unwritten buffer_head as mapped during write_begin,"inode,extent",2,54,32,Performance
+2.6.31,ext4: Properly initialize the buffer_head state,"inode,extent",3,19,3,Bug
+2.6.32,ext4: partial revert to fix double brelse WARNING(),dir,1,4,12,Bug
+2.6.32,ext4: Fix return value of ext4_split_unwritten_extents() to fix direct I/O,extent,1,7,6,Bug
+2.6.32,ext4: code clean up for dio fallocate handling,misc->code,1,4,5,Maintenance
+2.6.32,ext4: skip conversion of uninit extents after direct IO if there isn't any,misc->code,3,21,6,Maintenance
+2.6.32,ext4: fix ext4_ext_direct_IO()'s return value after converting uninit extents,inode,2,8,3,Bug
+2.6.32,ext4: discard preallocation when restarting a transaction during truncate,inode,1,2,1,Bug
+2.6.32,"Revert ""ext4: Remove journal_checksum mount option and enable it by default""",super,3,22,7,Bug
+2.6.32,[PATCH] ext4: retry failed direct IO allocations,inode,1,4,0,Bug
+2.6.32,ext4: Fix build warning in ext4_dirty_inode(),misc->compile,1,0,2,Maintenance
+2.6.32,ext4: drop ext4dev compat,misc->code,2,0,45,Maintenance
+2.6.32,ext4: fix a BUG_ON crash by checking that page has buffers attached to it,inode,1,11,11,Bug
+2.6.32,ext4: Fix time encoding with extra epoch bits,other,1,3,3,Bug
+2.6.32,ext4: Add a stub for mpage_da_data in the trace header,misc->code,1,1,0,Maintenance
+2.6.32,ext4: Use tracepoints for mb_history trace file,"balloc,super",6,182,348,Performance
+2.6.32,"ext4, jbd2: Drop unneeded printks at mount and unmount time",misc->code,5,10,22,Maintenance
+2.6.32,ext4: Handle nested ext4_journal_start/stop calls without a journal,"dir,super",3,38,13,Bug
+2.6.32,ext4: Make sure ext4_dirty_inode() updates the inode in no journal mode,inode,1,4,15,Bug
+2.6.32,ext4: Avoid updating the inode table bh twice in no journal mode,misc->code,1,16,21,Maintenance
+2.6.32,ext4: EXT4_IOC_MOVE_EXT: Check for different original and donor inodes first,extent,1,8,8,Bug
+2.6.32,ext4: async direct IO for holes and fallocate support,"extent,file,inode,super",5,234,41,Feature
+2.6.32,ext4: Use end_io callback to avoid direct I/O fallback to buffered I/O,"inode,super",3,210,1,Feature
+2.6.32,ext4: Split uninitialized extents for direct I/O,"extent,inode",6,419,42,Reliability
+2.6.32,ext4: release reserved quota when block reservation for delalloc retry,inode,1,1,1,Bug
+2.6.32,ext4: Adjust ext4_da_writepages() to write out larger contiguous chunks,"inode,super",4,107,16,Feature
+2.6.32,ext4: Fix hueristic which avoids group preallocation for closed files,balloc,1,1,1,Bug
+2.6.32,ext4: Use ext4_msg() for ext4_da_writepage() errors,inode,1,25,25,Reliability
+2.6.32,ext4: Update documentation about quota mount options,misc->doc,1,10,3,Maintenance
+2.6.32,ext4: replace MAX_DEFRAG_SIZE with EXT_MAX_BLOCK,misc->api,3,7,7,Maintenance
+2.6.32,ext4: Fix the alloc on close after a truncate hueristic,inode,1,1,2,Bug
+2.6.32,ext4: Add a tracepoint for ext4_alloc_da_blocks(),inode,2,29,0,Reliability
+2.6.32,ext4: store EXT4_EXT_MIGRATE in i_state instead of i_flags,misc->code,3,13,15,Maintenance
+2.6.32,ext4: limit block allocations for indirect-block files to < 2^32,"balloc,inode,super,xattr",5,38,3,Bug
+2.6.32,ext4: Fix different block exchange issue in EXT4_IOC_MOVE_EXT,extent,1,37,9,Bug
+2.6.32,ext4: Add null extent check to ext_get_path,misc->code,1,16,18,Maintenance
+2.6.32,ext4: Replace BUG_ON() with ext4_error() in move_extents.c,extent,1,109,40,Reliability
+2.6.32,ext4: Replace get_ext_path macro with an inline funciton,misc->api,1,34,21,Maintenance
+2.6.32,ext4: Fix include/trace/events/ext4.h to work with Systemtap,misc->code,2,5,2,Maintenance
+2.6.32,ext4: Remove syncing logic from ext4_file_write,misc->code,1,2,51,Maintenance
+2.6.32,ext4: Fix initalization of s_flex_groups,super,1,6,6,Performance
+2.6.32,ext4: Always set dx_node's fake_dirent explicitly.,dir,1,1,1,Reliability
+2.6.32,ext4: Don't update superblock write time when filesystem is read-only,super,1,12,1,Bug
+2.6.32,ext4: Clarify the locking details in mballoc,resize,2,6,8,Performance
+2.6.32,ext4: check for need init flag in ext4_mb_load_buddy,balloc,1,18,21,Bug
+2.6.32,ext4: move ext4_mb_init_group() function earlier in the mballoc.c,misc->code,1,91,91,Maintenance
+2.6.32,ext4: Make non-journal fsync work properly,inode,1,40,14,Bug
+2.6.32,ext4: Assure that metadata blocks are written during fsync in no journal mode,file,2,11,3,Bug
+2.6.32,"ext4: Use bforget() in no journal mode for ext4_journal_{forget,revoke}()",other,1,2,2,Bug
+2.6.32,ext[234]: move over to 'check_acl' permission model,misc->api,0,0,0,Maintenance
+2.6.32,ext4: print more sysadmin-friendly message in check_block_validity(),misc->code,1,8,8,Maintenance
+2.6.32,ext4: Take page lock before looking at attached buffer_heads flags,inode,1,11,2,Bug
+2.6.32,ext4: Fix small typo for move_extent_per_page(),misc->code,1,2,2,Maintenance
+2.6.32,ext4: Return exchanged blocks count to user space in failure,ioctl,1,3,4,Bug
+2.6.32,ext4: Remove unneeded BUG_ON() in ext4_move_extents(),extent,1,0,3,Bug
+2.6.32,ext4: Fix wrong comparisons in mext_check_arguments(),extent,1,27,19,Bug
+2.6.32,ext4: fix cache flush in ext4_sync_file,file,1,2,2,Bug
+2.6.32,ext4: fix tracepoint format string warnings,misc->compile,2,41,36,Maintenance
+2.6.32,ext4: Remove journal_checksum mount option and enable it by default,misc->code,3,22,7,Maintenance
+2.6.32,ext4: Declare seq_operations and file_operations structures as const,misc->api,1,4,4,Maintenance
+2.6.32,ext4: Add new tracepoint: trace_ext4_da_write_pages(),inode,3,50,12,Reliability
+2.6.32,ext4: Restore wbc->range_start in ext4_da_writepages(),inode,1,2,0,Bug
+2.6.32,ext4: Fix spelling typo in the trace format for trace_ext4_da_writepages(),misc->code,1,1,1,Maintenance
+2.6.32,ext4: Limit number of links that can be created by ext4_link(),misc->code,1,1,1,Maintenance
+2.6.32,ext4: Allow rename to create more than EXT4_LINK_MAX subdirectories,misc->api,1,1,1,Maintenance
+2.6.32,ext4: fix extent sanity checking code with AGGRESSIVE_TEST,extent,1,34,26,Bug
+2.6.32,ext4: use ext4_grpblk_t more extensively,misc->code,3,19,16,Maintenance
+2.6.32,ext4: use variables not types in sizeofs() for allocations,misc->code,1,4,3,Maintenance
+2.6.32,ext4: Add missing unlock_new_inode() call in extent migration code,extent,1,1,1,Bug
+2.6.32,ext4: Add feature set check helper for mount & remount paths,super,1,49,42,Bug
+2.6.32,simplify some logic in ext4_mb_normalize_request,misc->code,1,4,9,Maintenance
+2.6.32,ext4: open-code ext4_mb_update_group_info,misc->code,3,1,12,Maintenance
+2.6.32,ext4: reject too-large filesystems on 32-bit kernels,super,1,10,3,Reliability
+2.6.32,ext4: Fix possible deadlock between ext4_truncate() and ext4_get_blocks(),"extent,inode",3,32,7,Bug
+2.6.32,ext4: Show unwritten extent flag in ext4_ext_show_leaf(),extent,2,23,11,Reliability
+2.6.32,ext4: Compile warning fix when EXT_DEBUG enabled,misc->compile,1,4,4,Maintenance
+2.6.32,ext4: Avoid group preallocation for closed files,balloc,2,38,2,Performance
+2.6.32,ext4: Fix bugs in mballoc's stream allocation mode,balloc,2,12,13,Bug
+2.6.32,ext4: Display the mballoc flags in mb_history in hex instead of decimal,misc->code,2,13,13,Maintenance
+2.6.32,ext4: Add configurable run-time mballoc debugging,balloc,3,80,26,Feature
+2.6.32,ext4: fix journal ref count in move_extent_par_page,extent,1,1,0,Bug
+2.6.32,ext4: remove redundant test on unsigned,misc->code,1,1,3,Maintenance
+2.6.32,ext4: fix build warning when EXT4FS_DEBUG is on,misc->compile,1,1,1,Maintenance
+2.6.32,ext4: Fix compile warnings with MB_DEBUG,misc->compile,1,4,4,Maintenance
+2.6.32,ext4: Remove unnecessary semicolons in mballoc.c,misc->code,1,1,1,Maintenance
+2.6.32,ext4: More buffer head reference leaks,"inode,dir",2,14,5,Bug
+2.6.32,ext4: Avoid null pointer dereference when decoding EROFS w/o a journal,super,1,2,1,Bug
+2.6.32,ext4: Fix typo in ext4/Kconfig,misc->code,1,1,1,Maintenance
+2.6.32,ext4: Fix memory leak fix when mounting an ext4 filesystem,balloc,1,0,19,Bug
+2.6.33,ext4: Drop EXT4_GET_BLOCKS_UPDATE_RESERVE_SPACE flag,misc->code,3,8,11,Maintenance
+2.6.33,ext4: Fix quota accounting error with fallocate,"extent,inode",3,54,13,Bug
+2.6.33,ext4: Handle -EDQUOT error on write,inode,1,18,14,Bug
+2.6.33,ext4: Calculate metadata requirements more accurately,"extent,inode",5,73,44,Bug
+2.6.33,ext4: Fix accounting of reserved metadata blocks,inode,1,4,4,Bug
+2.6.33,ext4: Patch up how we claim metadata blocks for quota purposes,inode,1,82,71,Bug
+2.6.33,ext4: Ensure zeroout blocks have no dirty metadata,extent,1,20,0,Bug
+2.6.33,ext4: return correct wbc.nr_to_write in ext4_da_writepages,inode,1,1,2,Bug
+2.6.33,ext4: Update documentation to correct the inode_readahead_blks option name,misc->doc,1,1,1,Maintenance
+2.6.33,ext4: flush delalloc blocks when space is low,inode,1,9,2,Bug
+2.6.33,ext4: Eliminate potential double free on error path,xattr,1,2,0,Bug
+2.6.33,ext4: fix unsigned long long printk warning in super.c,misc->compile,1,2,2,Maintenance
+2.6.33,ext4: fix sleep inside spinlock issue with quota and dealloc (#14739),inode,1,5,6,Bug
+2.6.33,ext4: Fix potential quota deadlock,"balloc,inode",2,7,8,Bug
+2.6.33,ext4: Convert to generic reserved quota's space management.,misc->api,3,17,10,Maintenance
+2.6.33,ext4: replace BUG() with return -EIO in ext4_ext_get_blocks,extent,1,7,1,Bug
+2.6.33,ext4: add module aliases for ext2 and ext3,misc->code,1,2,0,Maintenance
+2.6.33,ext4: Don't ask about supporting ext2/3 in ext4 if ext4 is not configured,misc->code,1,1,0,Maintenance
+2.6.33,ext4: remove unused #include <linux/version.h>,misc->code,2,0,2,Maintenance
+2.6.33,ext4: Support for 64-bit quota format,super,1,24,6,Feature
+2.6.33,ext4: Fix potential fiemap deadlock (mmap_sem vs. i_data_sem),extent,1,2,2,Bug
+2.6.33,ext4: Do not override ext2 or ext3 if built they are built as modules,misc->code,2,3,3,Maintenance
+2.6.33,ext4: Fix insufficient checks in EXT4_IOC_MOVE_EXT,"ioctl,extent",2,25,12,Bug
+2.6.33,ext4: Wait for proper transaction commit on fsync,other,6,80,31,Bug
+2.6.33,ext4: fix incorrect block reservation on quota transfer.,inode,1,1,1,Bug
+2.6.33,ext4: quota macros cleanup,misc->code,5,14,10,Maintenance
+2.6.33,ext4: ext4_get_reserved_space() must return bytes instead of blocks,inode,1,1,1,Bug
+2.6.33,ext4: remove blocks from inode prealloc list on failure,balloc,1,19,0,Bug
+2.6.33,ext4: wait for log to commit when umounting,super,1,6,4,Bug
+2.6.33,ext4: Avoid data / filesystem corruption when write fails to copy data,inode,1,15,5,Bug
+2.6.33,ext4: Use ext4 file system driver for ext2/ext3 file system mounts,super,2,68,0,Feature
+2.6.33,ext4: Return the PTR_ERR of the correct pointer in setup_new_group_blocks(),resize,1,1,1,Bug
+2.6.33,ext4: remove unused parameter wbc from __ext4_journalled_writepage(),misc->code,1,1,2,Maintenance
+2.6.33,ext4: remove encountered_congestion trace,misc->code,1,2,4,Maintenance
+2.6.33,ext4: move_extent_per_page() cleanup,misc->code,1,9,21,Maintenance
+2.6.33,ext4: initialize moved_len before calling ext4_move_extents(),misc->code,2,4,11,Maintenance
+2.6.33,ext4: Fix double-free of blocks with EXT4_IOC_MOVE_EXT,extent,1,5,4,Bug
+2.6.33,ext4: use ext4_data_block_valid() in ext4_free_blocks(),misc->api,1,1,3,Maintenance
+2.6.33,ext4: add check for wraparound in ext4_data_block_valid(),misc->code,1,1,0,Maintenance
+2.6.33,ext4: print i_mode in octal in ext4 tracepoints,misc->code,1,4,4,Maintenance
+2.6.33,ext4: call ext4_forget() from ext4_free_blocks(),extent,7,109,88,Bug
+2.6.33,ext4: fold ext4_free_blocks() and ext4_mb_free_blocks(),misc->code,3,26,49,Maintenance
+2.6.33,ext4: fold ext4_journal_forget() into ext4_forget(),misc->code,3,19,25,Maintenance
+2.6.33,ext4: fold ext4_journal_revoke() into ext4_forget(),misc->code,2,12,30,Maintenance
+2.6.33,ext4: move ext4_forget() to ext4_jbd2.c,misc->code,4,63,55,Maintenance
+2.6.33,"ext4: make ""norecovery"" an alias for ""noload""",misc->code,0,0,0,Maintenance
+2.6.33,ext4: make trim/discard optional (and off by default),"block,super",4,33,9,Feature
+2.6.33,ext4: fix error handling in ext4_ind_get_blocks(),inode,1,1,1,Bug
+2.6.33,ext4: avoid issuing unnecessary barriers,file,1,3,5,Performance
+2.6.33,ext4: fix block validity checks so they work correctly with meta_bg,"balloc,inode",2,2,5,Bug
+2.6.33,ext4: fix uninit block bitmap initialization when s_meta_first_bg is non-zero,balloc,1,7,1,Bug
+2.6.33,ext4: don't update the superblock in ext4_statfs(),super,1,0,2,Bug
+2.6.33,ext4: journal all modifications in ext4_xattr_set_handle,xattr,1,4,3,Bug
+2.6.33,ext4: fix i_flags access in ext4_da_writepages_trans_blocks(),inode,1,1,1,Bug
+2.6.33,ext4: make sure directory and symlink blocks are revoked,"inode,extent",2,5,3,Bug
+2.6.33,ext4: add tracepoint for ext4_forget(),inode,2,27,0,Reliability
+2.6.33,ext4: remove failed journal checksum check,misc->code,1,0,20,Maintenance
+2.6.33,ext4: plug a buffer_head leak in an error path of ext4_iget(),inode,1,3,8,Bug
+2.6.33,ext4: fix spelling typos in move_extent.c,misc->code,1,2,2,Maintenance
+2.6.33,ext4: fix possible recursive locking warning in EXT4_IOC_MOVE_EXT,extent,1,1,1,Bug
+2.6.33,ext4: fix lock order problem in ext4_move_extents(),extent,1,53,64,Bug
+2.6.33,ext4: fix the returned block count if EXT4_IOC_MOVE_EXT fails,extent,1,73,66,Bug
+2.6.33,ext4: avoid divide by zero when trying to mount a corrupted file system,super,1,4,4,Bug
+2.6.33,ext4: fix potential buffer head leak when add_dirent_to_buf() returns ENOSPC,dir,1,12,18,Bug
+2.6.34,ext4: Issue the discard operation *before* releasing the blocks to be reused,balloc,1,11,10,Bug
+2.6.34,ext4: Fix buffer head leaks after calls to ext4_get_inode_loc(),"extent,inode",2,2,0,Bug
+2.6.34,ext4: Fix possible lost inode write in no journal mode,inode,1,1,1,Bug
+2.6.34,ext4: Fixed inode allocator to correctly track a flex_bg's used_dirs,inode,1,2,2,Bug
+2.6.34,ext4: Don't use delayed allocation by default when used instead of ext3,misc->code,1,16,9,Maintenance
+2.6.34,ext4: Fix spelling of CONTIG_FS_EXT3 to CONFIG_FS_EXT3,misc->code,1,2,2,Maintenance
+2.6.34,ext4: Fix estimate of # of blocks needed to write indirect-mapped files,inode,1,2,2,Bug
+2.6.34,ext4: fix up rb_root initializations to use RB_ROOT,misc->api,3,4,4,Maintenance
+2.6.34,ext4: Code cleanup for EXT4_IOC_MOVE_EXT ioctl,misc->code,2,3,4,Maintenance
+2.6.34,ext4: Fix the NULL reference in double_down_write_data_sem(),extent,1,8,8,Bug
+2.6.34,ext4: Fix insertion point of extent in mext_insert_across_blocks(),extent,1,4,0,Bug
+2.6.34,ext4: consolidate in_range() definitions,misc->code,4,4,7,Maintenance
+2.6.34,ext4: cleanup to use ext4_grp_offs_to_block(),misc->api,1,2,6,Maintenance
+2.6.34,ext4: cleanup to use ext4_group_first_block_no(),misc->api,4,14,28,Maintenance
+2.6.34,ext4: Release page references acquired in ext4_da_block_invalidatepages,inode,1,3,4,Bug
+2.6.34,Get rid of mnt_mountpoint abuses in ext4,misc->code,1,2,4,Maintenance
+2.6.34,ext4: Fix ext4_quota_write cross block boundary behaviour,super,1,34,35,Bug
+2.6.34,ext4: Convert BUG_ON checks to use ext4_error() instead,"extent,inode,super",4,209,44,Reliability
+2.6.34,ext4: Use direct_IO_no_locking in ext4 dio read,inode,1,8,1,Performance
+2.6.34,ext4: use ext4_get_block_write in buffer write,"extent,inode,super",5,256,55,Performance
+2.6.34,ext4: mechanical rename some of the direct I/O get_block's identifiers,misc->code,5,61,69,Maintenance
+2.6.34,"ext4: make ""offset"" consistent in ext4_check_dir_entry()",misc->code,0,0,0,Maintenance
+2.6.34,ext4: Handle non empty on-disk orphan link,dir,1,8,0,Bug
+2.6.34,ext4: explicitly remove inode from orphan list after failed direct io,inode,1,3,0,Bug
+2.6.34,ext4: fix error handling in migrate,extent,1,14,15,Bug
+2.6.34,ext4: deprecate obsoleted mount options,misc->code,1,13,1,Maintenance
+2.6.34,ext4: Fix fencepost error in chosing choosing group vs file preallocation.,balloc,1,1,1,Performance
+2.6.34,ext4: trivial quota cleanup,misc->code,1,69,54,Maintenance
+2.6.34,ext4: mount flags manipulation cleanup,misc->api,1,13,18,Maintenance
+2.6.34,ext4: Add flag to files with blocks intentionally past EOF,"extent,inode,ioctl",4,41,4,Bug
+2.6.34,ext4: Fix BUG_ON at fs/buffer.c:652 in no journal mode,"inode,dir",4,7,7,Bug
+2.6.34,ext4: correctly calculate number of blocks for fiemap,extent,1,7,2,Bug
+2.6.34,ext4: add missing error checking to ext4_expand_extra_isize_ea(),xattr,1,2,0,Bug
+2.6.34,"ext4: move __func__ into a macro for ext4_warning, ext4_error",misc->api,13,146,210,Maintenance
+2.6.34,fix ext3/ext4 comment typo compain -> complain,misc->code,2,2,2,Maintenance
+2.6.34,ext4: Reserve INCOMPAT_EA_INODE and INCOMPAT_DIRDATA feature codepoints,misc->code,1,3,0,Maintenance
+2.6.34,ext4: Use bitops to read/modify EXT4_I(inode)->i_state,"extent,inode,xattr",7,71,51,Bug
+2.6.34,ext4: Use slab allocator for sub-page sized allocations,misc->api,2,134,9,Maintenance
+2.6.34,ext4: Add new tracepoints to debug delayed allocation space functions,inode,2,103,0,Reliability
+2.6.34,ext4: Add block validity check when truncating indirect block mapped inodes,"balloc,inode",3,35,12,Bug
+2.6.34,ext4: Fix optional-arg mount options,super,1,15,8,Bug
+2.6.34,ext4: fix async i/o writes beyond 4GB to a sparse file,"extent,inode",3,5,5,Bug
+2.6.35,ext4: Fix remaining racy updates of EXT4_I(inode)->i_flags,inode,1,23,17,Bug
+2.6.35,ext4: Make sure the MOVE_EXT ioctl can't overwrite append-only files,extent,1,3,0,Bug
+2.6.35,"ext4: replace inode uid,gid,mode init with helper",misc->api,1,4,8,Maintenance
+2.6.35,ext4: constify xattr_handler,misc->api,6,16,16,Maintenance
+2.6.35,ext4: Make fsync sync new parent directories in no-journal mode,"file,dir",3,32,2,Bug
+2.6.35,ext4: Drop whitespace at end of lines,misc->code,9,23,23,Maintenance
+2.6.35,ext4: Fix compat EXT4_IOC_ADD_GROUP,misc->code,2,39,2,Maintenance
+2.6.35,ext4: Conditionally define compat ioctl numbers,misc->code,1,2,0,Maintenance
+2.6.35,ext4: Add new tracepoints to track mballoc's buddy bitmap loads,balloc,2,35,0,Reliability
+2.6.35,ext4: Add a missing trace hook,inode,1,1,0,Reliability
+2.6.35,ext4: restart ext4_ext_remove_space() after transaction restart,extent,1,9,7,Bug
+2.6.35,ext4: Clear the EXT4_EOFBLOCKS_FL flag only when warranted,extent,1,15,3,Bug
+2.6.35,ext4: Avoid crashing on NULL ptr dereference on a filesystem error,extent,1,5,4,Bug
+2.6.35,ext4: Use bitops to read/modify i_flags in struct ext4_inode_info,"other,extent,file,inode,balloc,dir,xattr",13,136,56,Bug
+2.6.35,ext4: Convert calls of ext4_error() to EXT4_ERROR_INODE(),"dir,extent,inode,xattr",7,86,103,Reliability
+2.6.35,ext4: Convert callers of ext4_get_blocks() to use ext4_map_blocks(),misc->api,3,151,230,Maintenance
+2.6.35,ext4: Add new abstraction ext4_map_blocks() underneath ext4_get_blocks(),"extent,inode",3,199,170,Performance
+2.6.35,ext4: Use our own write_cache_pages(),misc->api,1,119,22,Maintenance
+2.6.35,ext4: Show journal_checksum option,misc->code,1,2,0,Maintenance
+2.6.35,ext4: Fix for ext4_mb_collect_stats(),balloc,1,1,1,Bug
+2.6.35,ext4: check for a good block group before loading buddy pages,balloc,2,58,13,Performance
+2.6.35,ext4: Prevent creation of files larger than RLIMIT_FSIZE using fallocate,extent,1,5,0,Reliability
+2.6.35,ext4: Remove extraneous newlines in ext4_msg() calls,misc->code,2,4,4,Maintenance
+2.6.35,ext4: Print mount options in when mounting and add a remount message,misc->code,1,10,1,Maintenance
+2.6.35,ext4: don't use quota reservation for speculative metadata,misc->code,2,26,48,Maintenance
+2.6.35,ext4: init statistics after journal recovery,super,1,18,22,Bug
+2.6.35,ext4: clean up inode bitmaps manipulation in ext4_free_inode,misc->code,1,37,44,Maintenance
+2.6.35,ext4: Do not zero out uninitialized extents beyond i_size,extent,1,51,16,Bug
+2.6.35,ext4: don't scan/accumulate more pages than mballoc will allocate,inode,1,9,0,Performance
+2.6.35,ext4: stop issuing discards if not supported by device,balloc,1,7,1,Reliability
+2.6.35,ext4: don't return to userspace after freezing the fs with a mutex held,super,1,10,10,Bug
+2.6.35,ext4: symlink must be handled via filesystem specific operation,misc->api,1,2,0,Maintenance
+2.6.35,ext4: check s_log_groups_per_flex in online resize code,resize,1,2,1,Bug
+2.6.35,ext4: fix quota accounting in case of fallocate,inode,1,2,1,Bug
+2.6.35,ext4: allow defrag (EXT4_IOC_MOVE_EXT) in 32bit compat mode,misc->code,1,2,0,Maintenance
+2.6.35,ext4: rename ext4_mb_release_desc() to ext4_mb_unload_buddy(),misc->api,1,12,12,Maintenance
+2.6.35,ext4: Remove unnecessary call to ext4_get_group_desc() in mballoc,misc->code,1,0,2,Maintenance
+2.6.35,ext4: fix memory leaks in error path handling of ext4_ext_zeroout(),extent,1,8,7,Bug
+2.6.35,ext4: Fix coding style in fs/ext4/move_extent.c,misc->code,1,1,0,Maintenance
+2.6.35,ext4: check missed return value in ext4_sync_file(),file,1,1,1,Bug
+2.6.36,ext4: clean up compiler warning in start_this_handle(),misc->compile,1,27,19,Maintenance
+2.6.36,convert ext4 to ->evict_inode(),misc->api,4,16,10,Maintenance
+2.6.36,ext4: Adding error check after calling ext4_mb_regular_allocator(),balloc,1,17,17,Bug
+2.6.36,ext4: Fix dirtying of journalled buffers in data=journal mode,inode,1,17,1,Bug
+2.6.36,ext4: re-inline ext4_rec_len_(to|from)_disk functions,dir,2,37,26,Performance
+2.6.36,ext4: Add mount options in superblock,super,2,30,8,Feature
+2.6.36,ext4: force block allocation on quota_off,super,1,14,1,Bug
+2.6.36,ext4: fix freeze deadlock under IO,super,1,2,2,Bug
+2.6.36,ext4: drop inode from orphan list if ext4_delete_inode() fails,inode,1,1,0,Bug
+2.6.36,ext4: check to make make sure bd_dev is set before dereferencing it,super,1,13,4,Bug
+2.6.36,ext4: don't print scary messages for allocation failures post-abort,misc->code,2,17,11,Maintenance
+2.6.36,ext4: fix EFBIG edge case when writing to large non-extent file,file,1,2,1,Bug
+2.6.36,ext4: fix ext4_get_blocks references,misc->code,2,6,9,Maintenance
+2.6.36,ext4: Always journal quota file modifications,super,1,5,14,Bug
+2.6.36,ext4: Fix potential memory leak in ext4_fill_super,super,1,5,3,Bug
+2.6.36,ext4: Don't error out the fs if the user tries to make a file too big,inode,1,2,4,Reliability
+2.6.36,ext4: allocate stripe-multiple IOs on stripe boundaries,balloc,1,3,4,Performance
+2.6.36,ext4: move aio completion after unwritten extent conversion,misc->code,2,15,6,Maintenance
+2.6.36,ext4: Support discard requests when running in no-journal mode,balloc,1,21,16,Feature
+2.6.36,ext4: Fix block bitmap inconsistencies after a crash when deleting files,inode,1,13,22,Bug
+2.6.36,ext4: Remove unnecessary casts of private_data,misc->code,2,2,2,Maintenance
+2.6.36,ext4: fix potential NULL dereference while tracing,balloc,2,14,10,Bug
+2.6.36,ext4: Define s_jnl_backup_type in superblock,misc->code,1,2,2,Maintenance
+2.6.36,"ext4: Once a day, printk file system error information to dmesg",super,2,62,0,Reliability
+2.6.36,ext4: Save error information to the superblock for analysis,"balloc,inode,super",5,90,22,Reliability
+2.6.36,ext4: Pass line numbers to ext4_error() and friends,misc->code,8,98,80,Maintenance
+2.6.36,ext4: Cleanup ext4_check_dir_entry so __func__ is now implicit,misc->api,3,17,16,Maintenance
+2.6.36,ext4: Pass line number to ext4_journal_abort_handle(),misc->code,3,53,47,Maintenance
+2.6.36,ext4: Enhance ext4_grp_locked_error() to take block and function numbers,misc->api,4,45,32,Maintenance
+2.6.36,ext4: clean up ext4_abort() so __func__ is now implicit,misc->code,3,10,9,Maintenance
+2.6.36,ext4: Add new superblock fields reserved for the Next3 snapshot feature,misc->code,1,7,1,Maintenance
+2.6.36,ext4: update ctime when changing the file's permission by setfacl,xattr,1,1,0,Bug
+2.6.36,ext4: remove vestiges of nobh support,misc->code,4,15,44,Maintenance
+2.6.36,ext4: remove initialized but not read variables,misc->code,7,10,50,Maintenance
+2.6.36,ext4: Convert more i_flags references to use accessor functions,misc->api,3,5,4,Maintenance
+2.6.36,ext4: Clean up s_dirt handling,misc->code,9,36,16,Maintenance
+2.6.37,ext4: fix on-line resizing regression,resize,1,5,0,Bug
+2.6.37,ext4: fix typo which broke '..' detection in ext4_find_entry(),misc->code,1,1,1,Maintenance
+2.6.37,ext4: Turn off multiple page-io submission by default,misc->code,3,17,3,Maintenance
+2.6.37,ext4: Add EXT4_IOC_TRIM ioctl to handle batched discard,ioctl,1,24,0,Feature
+2.6.37,ext4: ext4_fill_super shouldn't return 0 on corruption,super,1,3,2,Bug
+2.6.37,ext4: missing unlock in ext4_clear_request_list(),super,1,0,3,Bug
+2.6.37,ext4: fix setting random pages PageUptodate,file,1,2,2,Bug
+2.6.37,ext4: Add new ext4 inode tracepoints,"inode,super",3,110,0,Reliability
+2.6.37,ext4: Don't call sb_issue_discard() in ext4_free_blocks(),balloc,1,0,2,Bug
+2.6.37,ext4: do not try to grab the s_umount semaphore in ext4_quota_off,super,1,3,5,Performance
+2.6.37,ext4: fix potential race when freeing ext4_io_page structures,file,2,16,24,Bug
+2.6.37,ext4: handle writeback of inodes which are being freed,"file,super",3,38,25,Bug
+2.6.37,ext4: initialize the percpu counters before replaying the journal,misc->code,1,39,26,Maintenance
+2.6.37,"ext4: ""ret"" may be used uninitialized in ext4_lazyinit_thread()",misc->compile,0,0,0,Maintenance
+2.6.37,ext4: fix lazyinit hang after removing request,super,1,2,1,Performance
+2.6.37,ext4: Remove useless spinlock in ext4_getattr(),inode,1,0,2,Performance
+2.6.37,ext4: BUG_ON fix: check if page has buffers before calling page_buffers(),inode,1,5,7,Bug
+2.6.37,ext4: fix compile with CONFIG_EXT4_FS_XATTR disabled,misc->compile,1,1,1,Feature
+2.6.37,ext4: optimize orphan_list handling for ext4_setattr,inode,1,7,3,Performance
+2.6.37,ext4: fix unbalanced mutex unlock in error path of ext4_li_request_new,super,1,8,14,Bug
+2.6.37,ext4: fix compile error in ext4_fallocate(),misc->compile,1,1,1,Maintenance
+2.6.37,"ext4: move ext4_mb_{get,put}_buddy_cache_lock and make them static",misc->api,2,79,81,Maintenance
+2.6.37,ext4: rename mark_bitmap_end() to ext4_mark_bitmap_end(),misc->api,4,9,7,Maintenance
+2.6.37,ext4: move flush_completed_IO to fs/ext4/fsync.c and make it static,misc->api,3,83,84,Maintenance
+2.6.37,"ext4: rename {ext,idx}_pblock and inline small extent functions",misc->api,4,121,118,Maintenance
+2.6.37,ext4: make various ext4 functions be static,misc->api,7,27,44,Maintenance
+2.6.37,"ext4: rename {exit,init}_ext4_*() to ext4_{exit,init}_*()",misc->api,0,0,0,Maintenance
+2.6.37,ext4: fix kernel oops if the journal superblock has a non-zero j_errno,super,2,15,2,Bug
+2.6.37,ext4: update writeback_index based on last page scanned,inode,1,9,5,Bug
+2.6.37,ext4: implement writeback livelock avoidance using page tagging,inode,2,17,3,Performance
+2.6.37,ext4: tidy up a void argument in inode.c,misc->code,1,2,2,Maintenance
+2.6.37,ext4: add batched_discard into ext4 feature list,misc->code,1,2,0,Maintenance
+2.6.37,ext4: Add batched discard support for ext4,balloc,3,188,0,Feature
+2.6.37,ext4: Use return value from sb_issue_discard(),balloc,1,2,1,Reliability
+2.6.37,ext4: Check return value of sb_getblk() and friends,"balloc,inode",2,7,0,Bug
+2.6.37,ext4: use bio layer instead of buffer layer in mpage_da_submit_io,"extent,inode,file,super",6,489,109,Feature
+2.6.37,ext4: move mpage_put_bnr_to_bhs()'s functionality to mpage_da_submit_io(),misc->code,1,38,101,Maintenance
+2.6.37,ext4: inline walk_page_buffers() into mpage_da_submit_io,misc->api,1,13,11,Maintenance
+2.6.37,ext4: inline ext4_writepage() into mpage_da_submit_io(),misc->code,1,59,11,Maintenance
+2.6.37,ext4: simplify ext4_writepage(),misc->code,1,25,48,Maintenance
+2.6.37,ext4: call mpage_da_submit_io() from mpage_da_map_blocks(),misc->code,1,33,33,Maintenance
+2.6.37,ext4: use KMEM_CACHE instead of kmem_cache_create,misc->api,2,7,14,Maintenance
+2.6.37,ext4: use search_dirblock() in ext4_dx_find_entry(),misc->api,1,12,21,Maintenance
+2.6.37,ext4: avoid uninitialized memory references in ext3_htree_next_block(),dir,1,15,15,Bug
+2.6.37,ext4: remove unused ext4_sb_info members,misc->code,1,0,5,Maintenance
+2.6.37,ext4: queue conversion after adding to inode's completed IO list,inode,1,3,3,Bug
+2.6.37,ext4: don't use ext4_allocation_contexts for tracing,misc->code,2,41,91,Maintenance
+2.6.37,ext4: fix oops in trace_ext4_mb_release_group_pa,other,1,0,3,Bug
+2.6.37,ext4: fix potential infinite loop in ext4_da_writepages(),inode,1,1,1,Bug
+2.6.37,ext4: improve llseek error handling for overly large seek offsets,file,3,45,2,Reliability
+2.6.37,ext4: don't update sb journal_devnum when RO dev,super,1,1,1,Bug
+2.6.37,ext4: use sb_issue_zeroout in ext4_ext_zeroout,misc->api,1,7,62,Maintenance
+2.6.37,ext4: use sb_issue_zeroout in setup_new_group_blocks,misc->api,1,13,33,Maintenance
+2.6.37,ext4: add interface to advertise ext4 features in sysfs,"inode,super",3,65,11,Feature
+2.6.37,ext4: add support for lazy inode table initialization,"inode,super",4,611,3,Feature
+2.6.37,ext4: fix NULL pointer dereference in print_daily_error_info(),super,1,1,0,Bug
+2.6.37,ext4: don't hold spinlock while calling ext4_issue_discard(),balloc,1,2,2,Bug
+2.6.37,ext4: check for negative error code from sb_issue_discard,balloc,1,1,1,Bug
+2.6.37,ext4: don't bump up LONG_MAX nr_to_write by a factor of 8,inode,1,6,3,Bug
+2.6.37,ext4: stop looping in ext4_num_dirty_pages when max_pages reached,inode,1,3,1,Performance
+2.6.37,ext4: use dedicated slab caches for group_info structures,balloc,2,78,21,Performance
+2.6.37,ext4: avoid null dereference in trace_ext4_mballoc_discard,other,1,3,2,Bug
+2.6.37,ext4: fix EOFBLOCKS_FL handling,extent,1,69,29,Bug
+2.6.37,BKL: Remove BKL from ext4 filesystem,super,1,0,15,Performance
+2.6.37,BKL: Explicitly add BKL around get_sb/fill_super,misc->code,28,187,25,Maintenance
+2.6.37,ext3/ext4: Factor out disk addressability check,misc->api,4,36,7,Maintenance
+2.6.37,ext4: do not send discards as barriers,misc->code,1,1,1,Maintenance
+2.6.38,ext4: serialize unaligned asynchronous DIO,"extent,file,super",5,100,18,Bug
+2.6.38,ext4: make grpinfo slab cache names static,misc->api,1,60,40,Maintenance
+2.6.38,ext4: Fix data corruption with multi-block writepages support,file,1,6,5,Bug
+2.6.38,ext4: fix up ext4 error handling,super,1,10,4,Bug
+2.6.38,ext4: unregister features interface on module unload,super,1,10,2,Bug
+2.6.38,ext4: fix panic on module unload when stopping lazyinit thread,super,1,14,13,Bug
+2.6.38,make the feature checks in ->fallocate future proof,misc->code,5,8,3,Maintenance
+2.6.38,fs/ext4/inode.c: use pr_warn_ratelimited(),misc->api,1,2,1,Maintenance
+2.6.38,Ext4: fail if we try to use hole punch,extent,1,4,0,Reliability
+2.6.38,ext4: fix trimming starting with block 0 with small blocksize,balloc,1,6,0,Bug
+2.6.38,ext4: revert buggy trim overflow patch,balloc,1,0,6,Bug
+2.6.38,ext4: don't pass entire map to check_eofblocks_fl,misc->code,1,7,6,Maintenance
+2.6.38,ext4: fix memory leak in ext4_free_branches,inode,1,1,0,Bug
+2.6.38,ext4: remove ext4_mb_return_to_preallocation(),balloc,1,0,14,Bug
+2.6.38,ext4: flush the i_completed_io_list during ext4_truncate,"extent,file",3,9,2,Bug
+2.6.38,ext4: add error checking to calls to ext4_handle_dirty_metadata(),"inode,dir,resize",3,89,28,Bug
+2.6.38,ext4: fix trimming of a single group,balloc,1,1,1,Performance
+2.6.38,ext4: fix uninitialized variable in ext4_register_li_request,super,1,1,1,Bug
+2.6.38,ext4: dynamically allocate the jbd2_inode in ext4_inode_info as necessary,"file,inode,super",7,74,25,Performance
+2.6.38,ext4: drop i_state_flags on architectures with 64-bit longs,inode,3,25,9,Performance
+2.6.38,ext4: reorder ext4_inode_info structure elements to remove unneeded padding,other,1,4,3,Performance
+2.6.38,ext4: drop ec_type from the ext4_ext_cache structure,extent,3,18,28,Performance
+2.6.38,ext4: use ext4_lblk_t instead of sector_t for logical blocks,"extent,inode",4,5,5,Performance
+2.6.38,ext4: replace i_delalloc_reserved_flag with EXT4_STATE_DELALLOC_RESERVED,misc->code,5,9,8,Maintenance
+2.6.38,ext4: fix 32bit overflow in ext4_ext_find_goal(),extent,1,26,4,Performance
+2.6.38,ext4: add more error checks to ext4_mkdir(),dir,1,14,7,Bug
+2.6.38,ext4: ext4_ext_migrate should use NULL not 0,misc->code,1,1,1,Maintenance
+2.6.38,ext4: Use ext4_error_file() to print the pathname to the corrupted inode,misc->code,4,49,34,Maintenance
+2.6.38,ext4: use IS_ERR() to check for errors in ext4_error_file,super,1,1,1,Bug
+2.6.38,ext4: test the correct variable in ext4_init_pageio(),file,1,1,1,Bug
+2.6.38,"ext2,ext3,ext4: clarify comment for extN_xattr_set_handle",misc->code,3,3,3,Maintenance
+2.6.38,ext4: clean up ext4_xattr_list()'s error code checking and return strategy,misc->code,1,13,13,Maintenance
+2.6.38,ext4: remove warning message from ext4_issue_discard helper,balloc,1,10,12,Bug
+2.6.38,ext4: fix possible overflow in ext4_trim_fs(),balloc,1,6,0,Bug
+2.6.38,"ext2,3,4: provide simple rcu-walk ACL implementation",xattr,1,5,2,Reliability
+2.6.38,ext4: Add error checking to kmem_cache_alloc() call in ext4_free_blocks(),balloc,1,5,1,Bug
+2.6.38,ext4: Use printf extension %pV,misc->api,1,23,17,Maintenance
+2.6.38,ext4: Use vzalloc in ext4_fill_flex_info(),misc->api,1,7,8,Maintenance
+2.6.38,ext4: zero out nanosecond timestamps for small inodes,other,1,4,0,Bug
+2.6.38,ext4: optimize ext4_check_dir_entry() with unlikely() annotations,dir,3,33,26,Performance
+2.6.38,ext4: use kmem_cache_zalloc() in ext4_init_io_end(),misc->api,1,1,4,Maintenance
+2.6.38,ext4: Remove redundant unlikely(),misc->code,1,1,1,Maintenance
+2.6.38,ext4: Use pr_warning_ratelimited() instead of printk_ratelimit(),misc->api,1,2,2,Maintenance
+2.6.38,ext4: Fix up comments in inode.c,misc->code,1,13,4,Maintenance
+2.6.38,ext4: Add second mount options field since the s_mount_opt is full up,misc->api,2,13,2,Maintenance
+2.6.38,ext4: Move struct ext4_mount_options from ext4.h to super.c,misc->code,2,15,16,Maintenance
+2.6.38,ext4: Simplify the usage of clear_opt() and set_opt() macros,misc->api,3,86,84,Maintenance
+2.6.38,ext4: fix redirty_page_for_writepage() typo in comment,misc->code,1,1,1,Maintenance
+2.6.39,ext4: fix data corruption regression by reverting commit 6de9843dab3f,inode,1,1,0,Bug
+2.6.39,ext4: Allow indirect-block file to grow the file size to max file size,inode,1,17,6,Bug
+2.6.39,ext4: allow an active handle to be started when freezing,super,1,33,11,Bug
+2.6.39,ext4: sync the directory inode in ext4_sync_parent(),file,1,14,3,Bug
+2.6.39,ext4: init timer earlier to avoid a kernel panic in __save_error_info,super,1,5,3,Bug
+2.6.39,ext4: fix a double free in ext4_register_li_request,super,1,6,0,Bug
+2.6.39,ext4: fix credits computing for indirect mapped files,inode,1,5,6,Bug
+2.6.39,ext4: remove unnecessary (cm)time update of quota file,super,2,16,4,Performance
+2.6.39,ext4: use little-endian bitops,misc->api,1,6,6,Maintenance
+2.6.39,ext4: fix a BUG in mb_mark_used during trim.,balloc,1,8,3,Bug
+2.6.39,ext4: remove redundant set_buffer_mapped() in ext4_da_get_block_prep(),misc->code,1,0,1,Maintenance
+2.6.39,ext4: unused variables cleanup in fs/ext4/extents.c,misc->code,1,1,4,Maintenance
+2.6.39,ext4: add more tracepoints and use dev_t in the trace buffer,"balloc,extent,file,inode,dir",8,658,253,Reliability
+2.6.39,ext4: don't kfree uninitialized s_group_info members,balloc,1,1,1,Bug
+2.6.39,ext4: add missing space in printk's in __ext4_grp_locked_error(),misc->code,1,1,1,Maintenance
+2.6.39,ext4: add FITRIM to compat_ioctl.,misc->code,1,1,0,Maintenance
+2.6.39,ext4: handle errors in ext4_clear_blocks(),inode,1,26,20,Bug
+2.6.39,ext4: unify the ext4_handle_release_buffer() api,misc->api,3,5,12,Maintenance
+2.6.39,ext4: handle errors in ext4_rename,dir,1,7,3,Bug
+2.6.39,ext4: Initialize fsync transaction ids in ext4_new_inode(),inode,1,5,0,Bug
+2.6.39,ext4: Copy fs UUID to superblock,misc->code,1,2,0,Maintenance
+2.6.39,fs: Remove i_nlink check from file system link callback,misc->code,6,0,42,Maintenance
+2.6.39,ext4: Use single thread to perform DIO unwritten convertion,super,1,1,1,Performance
+2.6.39,ext4: optimize ext4_bio_write_page() when no extent conversion is needed,file,1,5,0,Performance
+2.6.39,ext4: skip orphan cleanup if fs has unknown ROCOMPAT features,super,1,8,0,Bug
+2.6.39,ext4: use the nblocks arg to ext4_truncate_restart_trans(),misc->code,1,1,1,Maintenance
+2.6.39,ext4: fix missing iput of root inode for some mount error paths,super,1,3,2,Bug
+2.6.39,ext4: make FIEMAP and delayed allocation play well together,extent,1,148,39,Bug
+2.6.39,ext4: suppress verbose debugging information if malloc-debug is off,misc->code,1,2,1,Maintenance
+2.6.39,ext4: don't leave PageWriteback set after memory failure,file,1,2,2,Bug
+2.6.39,ext4: move setup of the mpd structure to write_cache_pages_da(),misc->code,1,7,22,Maintenance
+2.6.39,ext4: don't lock the next page in write_cache_pages if not needed,inode,1,10,17,Performance
+2.6.39,ext4: remove page_skipped hackery in ext4_da_writepages(),misc->code,1,0,10,Maintenance
+2.6.39,ext4: clear the dirty bit for a page in writeback at the last minute,misc->code,1,11,17,Maintenance
+2.6.39,ext4: simple cleanups to write_cache_pages_da(),misc->code,1,48,67,Maintenance
+2.6.39,ext4: fold __mpage_da_writepage() into write_cache_pages_da(),misc->code,1,91,115,Maintenance
+2.6.39,ext4: enable mblk_io_submit by default,misc->code,1,3,2,Maintenance
+2.6.39,ext4: fix ext4_da_block_invalidatepages() to handle page range properly,inode,1,4,7,Bug
+2.6.39,ext4: mark multi-page IO complete on mapping failure,inode,1,3,0,Bug
+2.6.39,ext4: mballoc: don't replace the current preallocation group unnecessarily,misc->code,1,1,1,Maintenance
+2.6.39,ext4: clarify description of ac_g_ex in struct ext4_allocation_context,misc->code,1,1,1,Maintenance
+2.6.39,mballoc: add comments to ext4_mb_mark_free_simple(),misc->code,1,6,1,Maintenance
+2.6.39,ext4: remove unncessary call mb_find_buddy() in debugging code,misc->code,1,0,1,Maintenance
+2.6.39,ext4: code cleanup in mb_find_buddy(),misc->code,1,3,2,Maintenance
+2.6.39,ext4: enable acls and user_xattr by default,misc->code,1,5,9,Maintenance
+2.6.39,ext4: Adjust minlen with discard_granularity in the FITRIM ioctl,ioctl,1,2,0,Reliability
+2.6.39,ext4: check if device support discard in FITRIM ioctl,ioctl,1,4,0,Bug
+2.6.39,ext4: mark file-local functions and variables as static,misc->api,2,5,4,Maintenance
+2.6.39,ext4: allow inode_readahead_blks=0 (linux-2.6.37),misc->code,1,2,2,Maintenance
+2.6.39,ext4: Fix sparse warning: Using plain integer as NULL pointer,misc->code,7,23,23,Maintenance
+2.6.39,ext4: fix compile warnings with EXT4FS_DEBUG enabled,misc->compile,1,2,2,Maintenance
+2.6.39,ext4: update ext4 documentation,misc->doc,2,216,4,Maintenance
+2.6.39,ext4: fix comment typo uninitized,misc->code,1,1,1,Maintenance
+2.6.39,ext4: convert to alloc_workqueue(),misc->api,1,6,1,Maintenance
+2.6.39,"ext4: Fix comment typo ""especiially"".",misc->code,0,0,0,Maintenance
+2.6.19,[PATCH] jbd2: journal_dirty_data re-check for unmapped buffers,journal->transaction,1,14,1,Bug
+2.6.19,[PATCH] ext3/4: fix J_ASSERT(transaction->t_updates > 0) in journal_stop(),journal->transaction,1,3,2,Bug
+2.6.19,[PATCH] null dereference in fs/jbd2/journal.c,journal->journal,1,2,1,Bug
+2.6.19,[PATCH] jbd2: switch blks_type from sector_t to ull,misc->api,0,0,0,Maintenance
+2.6.19,[PATCH] jbd2: sector_t conversion,misc->api,0,0,0,Maintenance
+2.6.19,[PATCH] 64-bit jbd2 core,"journal->commit,journal->journal,journal->recovery,journal->revoke",5,77,22,Feature
+2.6.19,[PATCH] jbd2: cleanup ext4_jbd.h,misc->code,0,0,0,Maintenance
+2.6.19,[PATCH] jbd2: enable building of jbd2 and have ext4 use it rather than jbd,misc->compile,0,0,0,Maintenance
+2.6.19,[PATCH] jbd2: rename slab,misc->code,0,0,0,Maintenance
+2.6.19,[PATCH] jbd2: rename jbd2 symbols to avoid duplication of jbd symbols,misc->code,0,0,0,Maintenance
+2.6.19,[PATCH] jbd2: initial copy of files from jbd,misc->code,0,0,0,Maintenance
+2.6.20,[PATCH] jbd2: wait for already submitted t_sync_datalist buffer to complete,journal->commit,1,6,2,Bug
+2.6.20,[PATCH] make fs/jbd2/transaction.c:__kbd2_journal_temp_unlink_buffer() static,misc->api,0,0,0,Maintenance
+2.6.22,jbd: check for error returned by kthread_create on creating journal thread,journal->journal,2,18,8,Bug
+2.6.23,fix ext4/JBD2 build warnings,misc->compile,0,0,0,Maintenance
+2.6.23,jbd2: Move jbd2-debug file to debugfs,misc->code,0,0,0,Maintenance
+2.6.23,jbd2: Fix CONFIG_JBD_DEBUG ifdef to be CONFIG_JBD2_DEBUG,misc->code,0,0,0,Maintenance
+2.6.23,is_power_of_2(): jbd,misc->api,0,0,0,Maintenance
+2.6.23,jbd2 commit: fix transaction dropping,journal->commit,1,2,1,Bug
+2.6.24,JBD2: debug code cleanup.,misc->code,0,0,0,Maintenance
+2.6.24,jbd2: fix commit code to properly abort journal,journal->commit,1,4,4,Bug
+2.6.24,jbd2: JBD_XXX to JBD2_XXX naming cleanup,misc->api,0,0,0,Maintenance
+2.6.24,JBD2/Ext4: Convert kmalloc to kzalloc in jbd2/ext4,misc->api,0,0,0,Maintenance
+2.6.24,JBD2: replace jbd_kmalloc with kmalloc directly.,misc->api,0,0,0,Maintenance
+2.6.24,JBD2: jbd2 slab allocation cleanups,misc->code,0,0,0,Maintenance
+2.6.25,jbd/jbd2 NULL noise,misc->code,0,0,0,Maintenance
+2.6.25,jbd2: correctly unescape journal data blocks,journal->recovery,1,1,1,Bug
+2.6.25,JBD2: Clear buffer_ordered flag for barried IO request on success,journal->commit,1,2,1,Bug
+2.6.25,BKL-removal: remove incorrect comment refering to lock_kernel() from jbd/jbd2,misc->code,0,0,0,Maintenance
+2.6.25,JBD2: Use the incompat macro for testing the incompat feature.,misc->api,0,0,0,Maintenance
+2.6.25,jbd2: Fix reference counting on the journal commit block's buffer head,journal->commit,1,1,1,Bug
+2.6.25,jbd2: Add error check to journal_wait_on_commit_record to avoid oops,journal->commit,1,2,1,Bug
+2.6.25,jbd2: sparse pointer use of zero as null,misc->code,0,0,0,Maintenance
+2.6.25,"jbd2: Use round-jiffies() function for the ""5 second"" ext4/jbd2 wakeup",misc->api,0,0,0,Maintenance
+2.6.25,jbd2: Mark jbd2 slabs as SLAB_TEMPORARY,misc->code,0,0,0,Maintenance
+2.6.25,jbd2: add lockdep support,journal->transaction,2,15,0,Reliability
+2.6.25,ext4: Add the journal checksum feature,"journal->commit,journal->journal,journal->recovery",8,388,62,Feature
+2.6.25,jbd2: jbd2 stats through procfs,"journal->commit,journal->journal,journal->checkpoint,journal->transaction",5,481,2,Feature
+2.6.25,jbd2: Fix assertion failure in fs/jbd2/checkpoint.c,journal->checkpoint,3,12,10,Bug
+2.6.26,jbd2: Fix barrier fallback code to re-lock the buffer head,journal->commit,1,1,0,Bug
+2.6.26,"jbd2: If a journal checksum error is detected, propagate the error to ext4",journal->recovery,3,30,7,Reliability
+2.6.26,jbd2: Fix memory leak when verifying checksums in the journal,journal->recovery,1,1,0,Bug
+2.6.26,jbd2: update transaction t_state to T_COMMIT fix,journal->commit,1,2,0,Bug
+2.6.26,jdb2: replace remaining __FUNCTION__ occurrences,misc->api,0,0,0,Maintenance
+2.6.26,jbd2: only create debugfs and stats entries if init is successful,journal->journal,1,5,3,Bug
+2.6.26,jbd2: fix kernel-doc notation,misc->doc,0,0,0,Maintenance
+2.6.26,jbd2: replace potentially false assertion with if block,journal->journal,1,4,3,Bug
+2.6.26,jbd2: eliminate duplicated code in revocation table init/destroy functions,misc->code,0,0,0,Maintenance
+2.6.26,jbd2: tidy up revoke cache initialisation and destruction,misc->code,0,0,0,Maintenance
+2.6.26,jbd2: fix possible journal overflow issues,journal->transaction,2,21,3,Bug
+2.6.26,jbd2: fix the way the b_modified flag is cleared,"journal->commit,journal->transaction",2,13,16,Bug
+2.6.26,jbd2: use non-racy method for proc entries creation,journal->journal,1,4,13,Bug
+2.6.27,ext4: unexport jbd2_journal_update_superblock,misc->code,0,0,0,Maintenance
+2.6.27,jbd2: don't abort if flushing file data failed,journal->commit,1,20,4,Reliability
+2.6.27,jbd2: Remove data=ordered mode support using jbd buffer heads,misc->code,0,0,0,Maintenance
+2.6.27,jbd2: Implement data=ordered mode handling via inodes,"journal->commit,journal->journal,journal->transaction",4,270,0,Feature
+2.6.27,jbd2: fix race between jbd2_journal_try_to_free_buffers() and jbd2 commit transaction,journal->transaction,1,58,4,Bug
+2.6.27,jbd2: Add commit time into the commit block,journal->commit,2,5,0,Feature
+2.6.28,jbd2: deregister proc on failure in jbd2_journal_init_inode,journal->journal,1,2,0,Bug
+2.6.28,jbd2: don't give up looking for space so easily in __jbd2_log_wait_for_space,journal->checkpoint,1,25,7,Bug
+2.6.28,jbd2: Call the commit callback before the transaction could get dropped,journal->commit,1,4,4,Bug
+2.6.28,jbd2: don't dirty original metadata buffer on abort,journal->commit,1,4,1,Bug
+2.6.28,jbd2: fix error handling for checkpoint io,"journal->checkpoint,journal->journal,journal->recovery",4,65,21,Bug
+2.6.28,jbd2: abort when failed to log metadata buffers,journal->commit,1,3,0,Bug
+2.6.28,jbd2: Fix buffer head leak when writing the commit block,journal->commit,1,2,3,Bug
+2.6.28,jbd2: abort instead of waiting for nonexistent transaction,journal->checkpoint,1,17,2,Bug
+2.6.28,ext4/jbd2: Avoid WARN() messages when failing to write to the superblock,journal->journal,1,25,2,Reliability
+2.6.28,jbd2: clean up how the journal device name is printed,misc->code,0,0,0,Maintenance
+2.6.29,jbd2: Avoid possible NULL dereference in jbd2_journal_begin_ordered_truncate(),journal->transaction,4,41,16,Bug
+2.6.29,jbd2: Fix return value of jbd2_journal_start_commit(),journal->journal,1,11,6,Bug
+2.6.29,"jbd2: On a __journal_expect() assertion failure printk ""JBD2"", not ""EXT3-fs""",misc->code,0,0,0,Maintenance
+2.6.29,ext4: fix wrong use of do_div,misc->code,0,0,0,Maintenance
+2.6.29,jbd2: Fix oops in jbd2_journal_init_inode() on corrupted fs,journal->journal,1,27,13,Bug
+2.6.29,jbd2: Add buffer triggers,"journal->commit,journal->journal,journal->transaction",5,114,0,Feature
+2.6.29,jbd2: Submit writes to the journal using WRITE_SYNC,journal->commit,1,2,2,Bug
+2.6.29,"jbd2: Add pid and journal device name to the ""kjournald2 starting"" message",misc->code,0,0,0,Maintenance
+2.6.29,jbd2: Call journal commit callback without holding j_list_lock,"journal->commit,journal->checkpoint",3,11,8,Performance
+2.6.29,jbd2: Remove a large array of bh's from the stack of the checkpoint routine,misc->code,0,0,0,Maintenance
+2.6.29,ext4: display average commit time,misc->code,0,0,0,Maintenance
+2.6.29,jbd2: improve jbd2 fsync batching,"journal->commit,journal->transaction",3,73,14,Performance
+2.6.29,jbd2: Add barrier not supported test to journal_wait_on_commit_record,journal->commit,1,25,2,Bug
+2.6.30,jbd2: use SWRITE_SYNC_PLUG when writing synchronous revoke records,journal->revoke,3,16,11,Performance
+2.6.30,jbd2: use WRITE_SYNC_PLUG instead of WRITE_SYNC,journal->commit,1,9,4,Performance
+2.6.30,jbd2: Update locking coments,misc->code,0,0,0,Maintenance
+2.6.30,ext4: Use WRITE_SYNC for commits which are caused by fsync(),"journal->commit,journal->transaction",3,12,1,Bug
+2.6.31,jbd2: fix race between write_metadata_buffer and get_write_access,journal->journal,1,11,9,Bug
+2.6.31,jbd2: clean up jbd2_journal_try_to_free_buffers(),misc->code,1,0,49,Maintenance
+2.6.31,jbd2: Fix a race between checkpointing code and journal_get_write_access(),journal->transaction,1,35,33,Bug
+2.6.31,jbd2: Remove GFP_ATOMIC kmalloc from inside spinlock critical region,journal->journal,1,6,5,Bug
+2.6.31,jbd2: Fix minor typos in comments in fs/jbd2/journal.c,misc->code,0,0,0,Maintenance
+2.6.31,jbd2: convert instrumentation from markers to tracepoints,misc->api,0,0,0,Maintenance
+2.6.32,JBD/JBD2: free j_wbuf if journal init fails.,journal->journal,1,2,0,Bug
+2.6.32,jbd2: Use tracepoints for history file,misc->api,0,0,0,Maintenance
+2.6.32,jbd2: bitfields should be unsigned,misc->compile,0,0,0,Maintenance
+2.6.32,"ext4, jbd2: Drop unneeded printks at mount and unmount time",misc->code,0,0,0,Maintenance
+2.6.32,ext4: Fix async commit mode to be safe by using a barrier,journal->commit,1,7,4,Performance
+2.6.32,jbd2: Annotate transaction start also for jbd2_journal_restart(),journal->transaction,1,3,2,Reliability
+2.6.32,jbd2: round commit timer up to avoid uncommitted transaction,journal->transaction,1,1,1,Bug
+2.6.32,jbd2: Fail to load a journal if it is too short,journal->journal,1,6,0,Reliability
+2.6.33,jbd2: don't use __GFP_NOFAIL in journal_init_common(),journal->journal,1,1,1,Bug
+2.6.33,jbd: jbd-debug and jbd2-debug should be writable,misc->code,0,0,0,Maintenance
+2.6.33,"ext4, jbd2: Add barriers for file systems with exernal journals","journal->checkpoint,journal->commit",3,27,8,Bug
+2.6.33,jbd2: Export jbd2_log_start_commit to fix ext4 build,misc->compile,0,0,0,Maintenance
+2.6.33,jbd2: Add ENOMEM checking in and for jbd2_journal_write_metadata_buffer(),"journal->commit,journal->journal",2,8,0,Bug
+2.6.33,jbd2: don't wipe the journal on a failed journal checksum,journal->journal,1,7,0,Reliability
+2.6.34,jbd2: clean up an assertion in jbd2_journal_commit_transaction(),misc->code,0,0,0,Maintenance
+2.6.34,jbd2: delay discarding buffers in journal_unmap_buffer,"journal->commit,journal->transaction",2,36,17,Bug
+2.6.34,ext4: Use slab allocator for sub-page sized allocations,journal->journal,2,134,9,Feature
+2.6.34,ext4: Add new tracepoint for jbd2_cleanup_journal_tail,journal->journal,2,29,0,Reliability
+2.6.35,jbd2: Improve scalability by not taking j_state_lock in jbd2_journal_stop(),journal->transaction,1,1,4,Performance
+2.6.35,jbd2: use NULL instead of 0 when pointer is needed,misc->code,0,0,0,Maintenance
+2.6.36,ext4: clean up compiler warning in start_this_handle(),misc->compile,0,0,0,Maintenance
+2.6.36,jbd2: Remove t_handle_lock from start_this_handle(),"journal->commit,journal->transaction",3,25,13,Performance
+2.6.36,jbd2: Change j_state_lock to be a rwlock_t,"journal->checkpoint,journal->commit,journal->journal,journal->transaction",5,108,104,Performance
+2.6.36,jbd2: Use atomic variables to avoid taking t_handle_lock in jbd2_journal_stop,"journal->checkpoint,journal->commit,journal->transaction",4,51,41,Performance
+2.6.36,jbd2: Make barrier messages less scary,misc->code,0,0,0,Maintenance
+2.6.36,jbd2: Remove __GFP_NOFAIL from jbd2 layer,misc->code,0,0,0,Maintenance
+2.6.37,jbd2: fix /proc/fs/jbd2/<dev> when using an external journal,journal->journal,1,8,8,Bug
+2.6.37,jbd2: Convert jbd2_slab_create_sem to mutex,misc->api,0,0,0,Maintenance
+2.6.37,"ext4,jbd2: convert tracepoints to use major/minor numbers",misc->api,0,0,0,Maintenance
+2.6.37,jbd2: Add sanity check for attempts to start handle during umount,journal->trancation,2,11,0,Reliability
+2.6.37,jbd2: Fix I/O hang in jbd2_journal_release_jbd_inode,journal->commit,3,12,6,Bug
+2.6.37,JBD2: Allow feature checks before journal recovery,journal->journal,1,4,0,Reliability
+2.6.37,jbd2: replace barriers with explicit flush / FUA usage,misc->code,0,0,0,Maintenance
+2.6.37,jbd2: Modify ASYNC_COMMIT code to not rely on queue draining on barrier,misc->code,0,0,0,Maintenance
+2.6.38,jbd2: call __jbd2_log_start_commit with j_state_lock write locked,"journal->journal,journal->transaction",2,21,9,Bug
+2.6.38,jbd2: simplify return path of journal_init_common,misc->code,0,0,0,Maintenance
+2.6.38,jbd2: move debug message into debug #ifdef,misc->code,0,0,0,Maintenance
+2.6.38,jbd2: remove unnecessary goto statement,misc->code,0,0,0,Maintenance
+2.6.38,jbd2: use offset_in_page() instead of manual calculation,misc->api,0,0,0,Maintenance
+2.6.38,jbd2: Fix a debug message in do_get_write_access(),misc->code,0,0,0,Maintenance
+2.6.38,jbd2: Use pr_notice_ratelimited() in journal_alloc_journal_head(),misc->api,0,0,0,Maintenance
+2.6.39,jbd2: fix potential memory leak on transaction commit,journal->commit,1,3,1,Bug
+2.6.39,jbd2: move bdget out of critical section,journal->journal,1,2,1,Bug
+2.6.39,jbd2: add COW fields to struct jbd2_journal_handle,misc->code,0,0,0,Maintenance
+2.6.39,jbd2: add the b_cow_tid field to journal_head struct,misc->code,0,0,0,Maintenance
+2.6.39,jbd2: finish conversion from WRITE_SYNC_PLUG to WRITE_SYNC and explicit plugging,misc->code,0,0,0,Maintenance
+2.6.39,jbd: Remove one to many n's in a word.,misc->code,0,0,0,Maintenance

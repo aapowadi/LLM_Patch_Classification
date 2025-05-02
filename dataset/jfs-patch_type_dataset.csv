@@ -1,0 +1,192 @@
+Version,Description,Component,Files_Modified,Lines_Added,Lines_Removed,Patch_Type
+2.6.1,[PATCH] JFS fix for NFS on little-endian systems,dir,1,8,4,Bug
+2.6.1,[PATCH] don't clear i_sb,inode,1,0,2,Bug
+2.6.2,JFS: Avoid segfault when dirty inodes are written on readonly mount,journal,1,4,0,Bug
+2.6.2,JFS: Fix broken return code checking in ACL code,xattr,1,3,2,Bug
+2.6.2,[JFS] allow resize option with no parameter,super,1,13,10,Bug
+2.6.2,JFS: Creating large xattr lists may cause BUG,xattr,1,1,1,Bug
+2.6.3,JFS: rename should update mtime on source and target directories,dir,1,2,2,Bug
+2.6.3,JFS: Threads should exit with complete_and_exit,journal,2,3,6,Bug
+2.6.4,JFS: get_UCSname does not need nls_tab argument,misc->api,0,0,0,Maintenance
+2.6.4,JFS: Don't do filename translation by default,misc->code,0,0,0,Maintenance
+2.6.4,JFS: Error path accessed uninitialized variables,inode,1,1,3,Bug
+2.6.4,JFS: Support sharing of journal by multiple volumes,"journal,super",7,317,211,Feature
+2.6.4,JFS: setting xattr should update ctime,xattr,1,1,0,Bug
+2.6.4,JFS: warn users of inaccessible file names,other,1,18,2,Reliability
+2.6.4,JFS: Avoid incrementing i_count on file create,"inode,journal,dir",5,26,26,Bug
+2.6.4,JFS: Add lots of missing statics and remove dead code,misc->code,0,0,0,Maintenance
+2.6.5,"JFS: zero new log pages, etc.","file,journal,super",3,6,2,Reliability
+2.6.5,JFS: Prevent hang in __lock_metapage,"inode,tree,journal,balloc",5,147,109,Bug
+2.6.5,JFS: don't use global lock in lmLogSync when local lock is sufficient,journal,1,6,2,Performance
+2.6.5,JFS: initialize log->bp before calling lmNextPage,journal,1,3,4,Bug
+2.6.6,JFS: Fix race in jfs_sync,journal,1,12,5,Bug
+2.6.6,JFS: Fix non-ascii file name problem,other,1,2,3,Bug
+2.6.6,JFS: [CHECKER] Fix a possible null-pointer dereference,tree->dir,1,6,1,Bug
+2.6.6,JFS: [CHECKER] Memory leak in jfs_link,dir,1,5,2,Bug
+2.6.4,JFS: [CHECKER] get rid of txAbortCommit,misc->code,0,0,0,Maintenance
+2.6.7,JFS: Avoid race invalidating metadata page,file,2,68,40,Bug
+2.6.7,JFS: reduce stack usage,misc->code,0,0,0,Maintenance
+2.6.7,JFS: [CHECKER] More robust error recovery in add_index,tree->dir,1,16,12,Bug
+2.6.7,JFS: module unload was not removing /proc/fs/jfs/,misc->code,0,0,0,Maintenance
+2.6.7,JFS: error in __get_metapage caused by invalid size from ea_get,xattr,1,2,1,Bug
+2.6.7,JFS: Don't return -EPERM for system xattrs.,misc->code,0,0,0,Maintenance
+2.6.7,JFS: Implement multiple commit threads,"journal,super",7,182,130,Feature
+2.6.7,JFS: set GFP_NOFS to avoid recursing back into file system code,super,2,12,1,Bug
+2.6.7,JFS: [CHECKER] Memory leak on commonly executed path,log,1,3,0,Bug
+2.6.7,"JFS: [CHECKER] if txCommit fails, don't call d_instantiate",dir,1,11,9,Bug
+2.6.7,JFS: check default acl for correctness before setting it,xattr,1,16,9,Reliability
+2.6.7,JFS: fix hang in __get_metapage,file,1,1,0,Bug
+2.6.7,JFS: Handle out of space errors more gracefully,"dir,journal,tree",3,71,88,Reliability
+2.6.7,JFS: Better RAS when btstack is overrun,"balloc,tree->dir",4,31,11,Reliability
+2.6.8,JFS: Don't allow reading beyond the inode map's EOF,file,1,9,1,Bug
+2.6.8,[PATCH] jfs build fix,misc->compile,0,0,0,Maintenance
+2.6.8,[PATCH] jfs warning fix,misc->compile,0,0,0,Maintenance
+2.6.8,[PATCH] jfs_setattr() fix,xattr,1,2,2,Bug
+2.6.8,JFS: Error path released metadata page it shouldn't have,tree->extent,1,8,17,Bug
+2.6.8,JFS: Updated field isn't always written to disk during truncate,tree->extent,1,11,1,Bug
+2.6.8,JFS: Protect active_ag with a spinlock,"file,extent,super",4,11,0,Bug
+2.6.8,JFS: prevent concurrent calls to txCommit on the imap inode,inode,1,6,0,Bug
+2.6.8,JFS: Check for dmap corruption before using leafidx,balloc,1,34,0,Reliability
+2.6.8,JFS: jfs_dmap build fix,misc->compile,0,0,0,Maintenance
+2.6.8,[PATCH] sparse: NULL noise in jfs,misc->code,0,0,0,Maintenance
+2.6.8,JFS: Add d_hash and d_compare operations for case-insensitive names,misc->code,0,0,0,Maintenance
+2.6.9,JFS: disk quota support,"xattr,inode,tree,extent,journal,dir,resize",11,210,105,Feature
+2.6.9,JFS: Trivial: remove dead code,misc->code,0,0,0,Maintenance
+2.6.9,JFS: fix memory leak in __invalidate_metapages,file,1,1,0,Bug
+2.6.9,[PATCH] fix for fsync ignoring writing errors,inode,2,7,5,Bug
+2.6.10,JFS: Fix extent overflow bugs,tree->extent,1,26,34,Bug
+2.6.10,JFS: avoid assert in lbmfree,journal,1,2,0,Bug
+2.6.10,JFS: endian annotations,"inode,balloc,tree,journal,other",16,276,220,Reliability
+2.6.10,JFS: use alloc_metapage for consistency,misc->code,0,0,0,Maintenance
+2.6.10,JFS: make some symbols static,misc->api,0,0,0,Maintenance
+2.6.11,JFS: fix race in jfs_commit_inode,inode,1,8,3,Bug
+2.6.11,JFS: add security and trusted xattrs,xattr,2,67,4,Feature
+2.6.11,JFS: speed up nointegrity mount,journal,1,4,0,Performance
+2.6.11,JFS: flush new iag from bd_inode's mapping,"inode,file",2,7,8,Bug
+2.6.11,JFS: delete unused file,misc->code,0,0,0,Maintenance
+2.6.12,JFS: Endian errors,tree->extent,1,3,3,Reliability
+2.6.12,[PATCH] JFS: Don't allocate extents that overlap existing extents,"inode,tree",3,46,25,Bug
+2.6.12,[PATCH] JFS: Write journal sync points more often,"journal,super",4,27,9,Reliability
+2.6.12,[PATCH] JFS: Support page sizes greater than 4K,"inode,balloc,journal,file,super,resize",13,809,465,Feature
+2.6.12,[PATCH] JFS: Changes for larger page size,misc->code,0,0,0,Maintenance
+2.6.12,[PATCH] JFS: Simplify creation of new iag,inode,1,36,34,Performance
+2.6.12,[PATCH] JFS: reduce number of synchronous transactions,journal,1,40,23,Performance
+2.6.13,JFS: Fix race in txLock,journal,2,4,0,Bug
+2.6.13,JFS: Check for invalid inodes in jfs_delete_inode,inode,1,4,0,Bug
+2.6.13,JFS: Improve sync barrier processing,"journal,super",4,26,24,Performance
+2.6.13,JFS: Fix i_blocks accounting when allocation fails,tree->dir,1,9,4,Bug
+2.6.13,JFS: Don't set log_SYNCBARRIER when log->active == 0,journal,1,2,1,Bug
+2.6.13,JFS: Fix typo in last patch,file,1,1,1,Bug
+2.6.13,JFS: fsync wrong behavior when I/O failure occurs,file,1,1,1,Bug
+2.6.13,JFS: Remove assert statement in dbJoin & return -EIO instead,balloc,1,30,16,Reliability
+2.6.13,JFS: Remove bogus WARN_ON statement and some dead code,misc->code,1,0,9,Maintenance
+2.6.13,JFS: Need to be root to create files with security context,xattr,1,2,2,Bug
+2.6.13,JFS: Allow security.* xattrs to be set on symlinks,xattr,1,1,1,Bug
+2.6.13,JFS: Code cleanup - getting rid of never-used debug code,misc->code,6,8,947,Maintenance
+2.6.13,JFS: performance patch,other,1,4,3,Performance
+2.6.13,JFS: Fix compiler warning in jfs_logmgr.c,misc->compile,1,3,2,Maintenance
+2.6.13,JFS: kernel BUG at fs/jfs/jfs_txnmgr.c:859,tree->dir,1,3,0,Bug
+2.6.13,JFS: Remove redundant kfree() NULL pointer checks,misc->code,2,4,8,Maintenance
+2.6.13,JFS: Fix sparse warning,misc->code,1,1,1,Maintenance
+2.6.13,JFS: cleanup - remove unneeded sanity check,misc->code,1,0,9,Maintenance
+2.6.13,JFS: fix sparse warnings by moving extern declarations to headers,misc->code,18,89,181,Maintenance
+2.6.14,JFS: don't dereference tlck->ip from txUpdateMap,journal,2,9,1,Bug
+2.6.14,"JFS: Fix sparse warnings, including endian error",inode,3,5,6,Bug
+2.6.14,JFS: Implement jfs_init_security,"dir,xattr",3,68,0,Feature
+2.6.14,JFS: allow extended attributes to be set within a existing transaction,"dir,xattr",5,112,49,Feature
+2.6.14,JFS: jfs_delete_inode should always call clear_inode.,inode,1,12,12,Bug
+2.6.14,JFS: Initialize dentry->d_op for negative dentries too,misc->code,1,2,3,Maintenance
+2.6.15,JFS: set i_ctime & i_mtime on target directory when creating links,dir,1,3,0,Bug
+2.6.15,JFS: make sure right-most xtree pages have header.next set to zero,tree->extent,1,9,9,Bug
+2.6.15,JFS: Corrupted block map should not cause trap,balloc,1,14,5,Reliability
+2.6.15,JFS: make special inodes play nicely with page balancing,"balloc,inode,file,journal,super",5,15,5,Bug
+2.6.16,[PATCH] JFS: Take logsync lock before testing mp->lsn,"balloc,inode",2,4,9,Bug
+2.6.16,[PATCH] remove jfs xattr permission checks,misc->code,0,0,0,Maintenance
+2.6.17,JFS: Fix multiple errors in metapage_releasepage,file,1,5,15,Bug
+2.6.17,"JFS: add uid, gid, and umask mount options","xattr,inode,super",5,93,10,Feature
+2.6.17,JFS: kzalloc conversion,misc->api,3,5,10,Maintenance
+2.6.17,JFS: Add missing file from fa3241d24cf1182b0ffb6e4d412c3bc2a2ab7bf6,misc->code,1,107,0,Feature
+2.6.17,JFS: Use the kthread_ API,misc->api,4,38,72,Maintenance
+2.6.17,JFS: Fix regression.  fsck complains if symlinks do not have INLINEEA attribute,inode,1,4,4,Bug
+2.6.17,JFS: ext2 inode attributes for jfs,"file,inode,dir",7,69,8,Feature
+2.6.17,JFS: semaphore to mutex conversion.,misc->api,15,103,101,Maintenance
+2.6.17,JFS: make buddy table static,misc->api,1,1,1,Maintenance
+2.6.17,JFS: Add back directory i_size calculations for legacy partitions,misc->code,1,12,1,Maintenance
+2.6.18,JFS: Fix bug in quota code.  tmp_bh.b_size must be initialized,super,1,1,0,Bug
+2.6.18,"JFS: Quota support broken, no quota_read and quota_write",misc->code,3,119,15,Maintenance
+2.6.18,JFS: commit_mutex cleanups,dir,2,17,18,Bug
+2.6.19,JFS: Remove redundant xattr permission checking,misc->code,1,5,4,Maintenance
+2.6.19,jfs: Add splice support,misc->code,1,2,0,Maintenance
+2.6.19,JFS: pageno needs to be long,inode,1,2,2,Bug
+2.6.19,JFS: White space cleanup,misc->code,41,508,510,Maintenance
+2.6.19,[PATCH] JFS: return correct error when i-node allocation failed,"inode,dir,super,tree",5,17,17,Bug
+2.6.19,JFS: Remove shadow variable from fs/jfs/jfs_txnmgr.c:xtLog(),misc->code,1,0,2,Maintenance
+2.6.19,[PATCH] fs/jfs: Conversion to generic boolean,misc->api,0,0,0,Maintenance
+2.6.20,[PATCH] Fix JFS after clear_page_dirty() removal,misc->code,0,0,0,Maintenance
+2.6.20,[PATCH] struct path: convert jfs,misc->code,0,0,0,Maintenance
+2.6.20,JFS: Fix conflicting superblock flags,other,1,21,21,Bug
+2.6.21,"JFS: Get rid of ""may be used uninitialized"" warnings",misc->compile,0,0,0,Maintenance
+2.6.21,JFS: Remove incorrect kgdb define,misc->code,1,0,5,Maintenance
+2.6.21,JFS: call io_schedule() instead of schedule() to avoid deadlock,"file,journal",3,3,3,Bug
+2.6.21,JFS: Add lockdep annotations,"inode,balloc,dir",5,74,41,Reliability
+2.6.21,JFS: Avoid BUG() on a damaged file system,tree->extent,1,15,0,Reliability
+2.6.22,JFS: Fix race waking up jfsIO kernel thread,journal,1,2,1,Bug
+2.6.22,JFS: use __set_current_state(),misc->api,3,6,6,Maintenance
+2.6.22,Copy i_flags to jfs inode flags on write,"inode,ioctl",5,23,1,Bug
+2.6.22,"JFS: document uid, gid, and umask mount options in jfs.txt",misc->doc,1,7,1,Maintenance
+2.6.23,JFS: Update print_hex_dump() syntax,misc->code,5,28,29,Maintenance
+2.6.23,JFS: use print_hex_dump() rather than private dump_mem() function,misc->api,7,29,45,Maintenance
+2.6.23,JFS: Whitespace cleanup and remove some dead code,misc->code,23,1066,1098,Maintenance
+2.6.24,Forbid user to change file flags on quota files,ioctl,5,21,0,Reliability
+2.6.24,jfs: new export ops,misc->api,3,27,18,Maintenance
+2.6.24,jfs: convert to new aops,misc->api,1,10,7,Maintenance
+2.6.24,JFS: Bio cleanup: Replace missing return statements,journal,1,3,0,Bug
+2.6.24,JFS: fix bio-related build breakage,misc->compile,1,1,6,Maintenance
+2.6.25,BKL-removal: Implement a compat_ioctl handler for JFS,misc->code,5,27,0,Maintenance
+2.6.25,BKL-removal: Use unlocked_ioctl for jfs,ioctl,4,13,7,Performance
+2.6.25,iget: stop JFS from using iget() and read_inode(),"inode,dir,super",4,40,31,Reliability
+2.6.25,mount options: fix jfs,misc->code,1,6,0,Maintenance
+2.6.25,JFS: simplify types to get rid of sparse warning,misc->code,1,14,14,Maintenance
+2.6.25,JFS: FIx one more plain integer as NULL pointer warning,misc->code,1,1,1,Maintenance
+2.6.25,JFS: Remove defconfig ptr comparison to 0,misc->code,5,15,14,Maintenance
+2.6.25,JFS: use DIV_ROUND_UP where appropriate,misc->api,2,3,3,Maintenance
+2.6.25,Remove unnecessary kmalloc casts in the jfs filesystem,misc->code,1,2,6,Maintenance
+2.6.25,JFS is missing a memory barrier,file,1,2,2,Bug
+2.6.25,JFS: Make sure special inode data is written after journal is flushed,"journal,super",2,17,19,Bug
+2.6.25,JFS: clear PAGECACHE_TAG_DIRTY for no-write pages,file,1,8,3,Performance
+2.6.26,jfs: replace __inline with inline,misc->api,1,1,1,Maintenance
+2.6.26,jfs: le*_add_cpu conversion,misc->api,0,0,0,Maintenance
+2.6.27,jfs: remove DIRENTSIZ,misc->code,1,0,3,Maintenance
+2.6.27,JFS: diAlloc() should return -EIO rather than EIO,inode,1,1,1,Bug
+2.6.27,JFS: skip bad iput() call in error path,super,1,3,4,Bug
+2.6.27,JFS: switch to seq_files,misc->code,6,114,133,Maintenance
+2.6.27,JFS: 0 is not valid errno value so return NULL from jfs_lookup,dir,1,1,1,Bug
+2.6.29,fix the treatment of jfs special inodes,inode,1,7,3,Bug
+2.6.29,nfsd race fixes: jfs,"dir,inode",2,37,16,Bug
+2.6.29,jfs: ensure symlinks are NUL-terminated,inode,1,7,1,Reliability
+2.6.29,CRED: Wrap task credential accesses in the JFS filesystem,misc->api,1,2,2,Maintenance
+2.6.30,constify dentry_operations: JFS,misc->api,2,3,3,Maintenance
+2.6.30,jfs: Use lowercase names of quota functions,misc->code,8,36,36,Maintenance
+2.6.30,jfs: needs crc32_le,misc->compile,1,1,0,Maintenance
+2.6.30,jfs: Fix error handling in metapage_writepage(),file,1,13,5,Reliability
+2.6.30,jfs: return f_fsid for statfs(2),misc->code,1,4,0,Maintenance
+2.6.30,jfs: remove xtLookupList(),misc->code,4,25,332,Maintenance
+2.6.30,jfs: clean up a dangling comment,misc->code,1,3,7,Maintenance
+2.6.31,jfs: Fix early release of acl in jfs_get_acl,xattr,1,1,3,Bug
+2.6.31,another race fix in jfs_check_acl(),xattr,1,7,6,Bug
+2.6.31,switch jfs to inode->i_acl,misc->api,4,15,41,Maintenance
+2.6.31,jfs: fix regression preventing coalescing of extents,extent,1,1,0,Bug
+2.6.31,jfs: Add missing mutex_unlock call to error path,inode,1,1,0,Bug
+2.6.31,missing unlock in jfs_quota_write(),super,1,3,1,Bug
+2.6.32,jffs2/jfs/xfs: switch over to 'check_acl' rather than 'permission()',misc->api,10,14,32,Maintenance
+2.6.33,jfs: Fix 32bit build warning,misc->compile,1,1,1,Maintenance
+2.6.34,JFS: Free sbi memory in error path,super,1,6,7,Bug
+2.6.34,jfs: add jfs specific ->setattr call,misc->api,4,17,4,Maintenance
+2.6.34,jfs: fix diAllocExt error in resizing filesystem,resize,1,5,1,Bug
+2.6.35,"jfs: replace inode uid,gid,mode init with helper",misc->api,1,2,10,Maintenance
+2.6.36,jfs: don't allow os2 xattr namespace overlap with others,xattr,1,38,49,Reliability
+2.6.36,switch jfs to ->evict_inode(),misc->api,3,20,25,Maintenance
+2.6.37,BKL: Remove BKL from JFS,super,1,7,28,Performance
+2.6.38,jfs: fix d_revalidate oopsen on NFS exports,dir,1,1,1,Bug
+2.6.38,"switch jfs to ->s_d_op, close exportfs races","dir,super",2,4,12,Bug
+2.6.38,jfs: dont overwrite dentry name in d_revalidate,misc->code,1,35,8,Maintenance
